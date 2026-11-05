@@ -1,0 +1,8 @@
+requests==2.34.2
+pandas==3.1.0
+beautifulsoup4==4.15.0
+playwright==1.64.1
+psutil==7.2.2
+matplotlib==3.11.2
+jupyterlab==4.6.4
+ipykernel==7.4.0

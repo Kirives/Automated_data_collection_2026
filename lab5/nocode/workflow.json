@@ -1,0 +1,787 @@
+{
+  "id": "lab5Vshivkov6",
+  "name": "Лабораторная 5 - Книги и карточки",
+  "nodes": [
+    {
+      "id": "f9510d56-2d71-48ef-aa8b-810b24aec84a",
+      "name": "Ручной запуск",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "70f18f4b-7adb-4ce0-be43-a0fabd1cd83f",
+      "name": "Ежедневно в 09 00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        200
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1,
+              "triggerAtHour": 9,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "8e7eb62e-5814-40fe-92aa-30fb94cd46d2",
+      "name": "Две страницы каталога",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "url": "https://books.toscrape.com/catalogue/page-1.html",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "UniversityLab5/1.0 (educational crawl on toscrape.com)"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "identity"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 25000,
+          "response": {
+            "response": {
+              "responseFormat": "text",
+              "fullResponse": true
+            }
+          },
+          "pagination": {
+            "pagination": {
+              "paginationMode": "responseContainsNextURL",
+              "nextURL": "={{ 'https://books.toscrape.com/catalogue/' + $response.body.match(/class=\"next\"[\\s\\S]*?href=\"([^\"]+)\"/)[1] }}",
+              "paginationCompleteWhen": "other",
+              "completeExpression": "={{ !$response.body.includes('class=\"next\"') }}",
+              "limitPagesFetched": true,
+              "maxRequests": 2,
+              "requestInterval": 1000
+            }
+          }
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1000,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "d03d3550-8d5e-456d-a3df-ba7c5e4e1138",
+      "name": "Ссылки из HTML",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "data",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "links",
+              "cssSelector": "article.product_pod h3 a",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {
+          "trimValues": true
+        }
+      }
+    },
+    {
+      "id": "d9af420b-fb23-4311-8b31-227a3733110b",
+      "name": "Развернуть ссылки",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        660,
+        0
+      ],
+      "parameters": {
+        "fieldToSplitOut": "links",
+        "options": {}
+      }
+    },
+    {
+      "id": "575e84ed-89ce-4562-b25d-4df2ec52dbeb",
+      "name": "Полные URL",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        880,
+        0
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "7bbf0dda-0ab2-482a-92ea-c4e79b547ee0",
+              "name": "product_url",
+              "value": "={{ 'https://books.toscrape.com/catalogue/' + $json.links }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "bd530e7b-0d9d-4446-b854-6dace67190ca",
+      "name": "Обход карточек",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        1100,
+        0
+      ],
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      }
+    },
+    {
+      "id": "c77640dd-8442-4cdf-acff-6cacc60d4207",
+      "name": "Загрузить карточку",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        260
+      ],
+      "parameters": {
+        "url": "={{ $json.product_url }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "UniversityLab5/1.0 (educational crawl on toscrape.com)"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "identity"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 25000,
+          "response": {
+            "response": {
+              "responseFormat": "text",
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1000,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "7507716f-1e88-424e-8a50-009877cabb43",
+      "name": "Поля карточки",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        880,
+        260
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "data",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "title",
+              "cssSelector": ".product_main h1",
+              "returnValue": "text"
+            },
+            {
+              "key": "headers",
+              "cssSelector": "table.table tr th",
+              "returnValue": "text",
+              "returnArray": true
+            },
+            {
+              "key": "values",
+              "cssSelector": "table.table tr td",
+              "returnValue": "text",
+              "returnArray": true
+            },
+            {
+              "key": "category",
+              "cssSelector": ".breadcrumb a[href*='category/books/']",
+              "returnValue": "text"
+            },
+            {
+              "key": "description",
+              "cssSelector": "#product_description + p",
+              "returnValue": "text"
+            },
+            {
+              "key": "rating",
+              "cssSelector": ".product_main .star-rating",
+              "returnValue": "attribute",
+              "attribute": "class"
+            }
+          ]
+        },
+        "options": {
+          "trimValues": true,
+          "cleanUpText": false
+        }
+      }
+    },
+    {
+      "id": "1731b8f0-0b7e-4830-b6b5-6785c09ac8ec",
+      "name": "Обязательные поля",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        660,
+        260
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "21b1706c-2f81-4567-873e-a03ef0afa033",
+              "leftValue": "={{ Boolean($json.title && $json.category && $json.description && $json.values[$json.headers.indexOf('UPC')] && /^£[0-9]+[.][0-9]+$/.test($json.values[$json.headers.indexOf('Price (excl. tax)')]) && /[0-9]+ available/.test($json.values[$json.headers.indexOf('Availability')]) && /^[0-9]+$/.test($json.values[$json.headers.indexOf('Number of reviews')])) }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "ab0c6cf8-e813-4bc1-8914-b5e470f46025",
+      "name": "Привести типы",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        440,
+        260
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cda6397d-0d40-42f2-9307-56703fc82f27",
+              "name": "upc",
+              "value": "={{ $json.values[$json.headers.indexOf('UPC')].trim().toLowerCase() }}",
+              "type": "string"
+            },
+            {
+              "id": "8eef670d-645a-49f6-9f23-95ba1bd52c28",
+              "name": "title",
+              "value": "={{ $json.title.replace(/\\s+/g,' ').trim() }}",
+              "type": "string"
+            },
+            {
+              "id": "fe07c971-d76f-4343-b067-213b49b0c7e0",
+              "name": "price_excl_tax",
+              "value": "={{ $json.values[$json.headers.indexOf('Price (excl. tax)')].replace('£','') }}",
+              "type": "string"
+            },
+            {
+              "id": "2a4a3cc0-3f20-4712-8020-998176d55a5c",
+              "name": "stock_count",
+              "value": "={{ Number($json.values[$json.headers.indexOf('Availability')].match(/([0-9]+) available/)[1]) }}",
+              "type": "number"
+            },
+            {
+              "id": "34296b1d-897c-4009-9509-d2c94a68ae9f",
+              "name": "review_count",
+              "value": "={{ Number($json.values[$json.headers.indexOf('Number of reviews')]) }}",
+              "type": "number"
+            },
+            {
+              "id": "10917ed4-16ff-4cf3-b68b-bf36869208df",
+              "name": "category",
+              "value": "={{ $json.category.trim() }}",
+              "type": "string"
+            },
+            {
+              "id": "503774cd-e3c4-4da9-acb0-5fe7a47bde9d",
+              "name": "description",
+              "value": "={{ $json.description.replace(/\\s+/g,' ').trim() }}",
+              "type": "string"
+            },
+            {
+              "id": "d8148735-3372-4101-ae5a-4df4b13cf8a9",
+              "name": "rating",
+              "value": "={{ ['One','Two','Three','Four','Five'].indexOf($json.rating.replace('star-rating','').trim()) + 1 }}",
+              "type": "number"
+            },
+            {
+              "id": "2ba5a7ad-f52c-49b6-9c11-0efae736735f",
+              "name": "source_url",
+              "value": "={{ $('Обход карточек').item.json.product_url }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "02d11beb-2267-4cfc-b8a2-2633a968d967",
+      "name": "Пауза 1 секунда",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        220,
+        260
+      ],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 1,
+        "unit": "seconds"
+      },
+      "webhookId": "131a45b0-8767-47b5-ac14-8ab330f38099"
+    },
+    {
+      "id": "3d2fa819-fa10-4686-8f4c-66d46a212680",
+      "name": "Удалить дубликаты",
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 1.1,
+      "position": [
+        1320,
+        0
+      ],
+      "parameters": {
+        "compare": "selectedFields",
+        "fieldsToCompare": "upc",
+        "options": {}
+      }
+    },
+    {
+      "id": "34e4e69b-bc5d-4463-9219-3db70bec080c",
+      "name": "Числовые типы",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1540,
+        0
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5e78722c-868a-42aa-9b3c-cb2c6018a3b7",
+              "name": "price_excl_tax",
+              "value": "={{ Number($json.price_excl_tax) }}",
+              "type": "number"
+            },
+            {
+              "id": "ca887dc7-fafd-4c4f-9038-de7fbd18c94a",
+              "name": "stock_count",
+              "value": "={{ Number($json.stock_count) }}",
+              "type": "number"
+            },
+            {
+              "id": "73ad5416-84f8-456c-8d0d-42550ed68eb6",
+              "name": "review_count",
+              "value": "={{ Number($json.review_count) }}",
+              "type": "number"
+            },
+            {
+              "id": "c89c9f9e-8174-4e65-b889-d1a3e003a4dc",
+              "name": "rating",
+              "value": "={{ Number($json.rating) }}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {},
+        "includeOtherFields": true
+      }
+    },
+    {
+      "id": "c0fb54e9-48cb-4e7e-8ac8-588f8f3b2862",
+      "name": "Создать CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1760,
+        0
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "e6f3c2bb-3182-481f-9368-4d9fb0476332",
+      "name": "Сохранить CSV",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1980,
+        0
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "de0bc7c8-e4c1-4bf5-8cf0-f073b9902aaf",
+      "name": "Описание ошибки",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1100,
+        520
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "bfef3cd8-ee67-4244-93a5-7d6ad504c7e6",
+              "name": "timestamp",
+              "value": "={{ $now.toISO() }}",
+              "type": "string"
+            },
+            {
+              "id": "707b462f-31df-40b3-a0f9-f1a23d97ff44",
+              "name": "message",
+              "value": "={{ JSON.stringify($json.error || $json).slice(0,500) }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "abac61ed-4cf5-480a-a124-de639666f674",
+      "name": "Ошибка в CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1320,
+        520
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "error_log.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "07ff7d6c-7296-4517-8770-42b404731be6",
+      "name": "Сохранить ошибку",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1540,
+        520
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/error_log.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "cdbe2f9d-dc05-474b-b92f-1b739b81345b",
+      "name": "Уведомить об ошибке",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        1760,
+        520
+      ],
+      "parameters": {
+        "errorMessage": "Сбор прерван: ошибка HTTP или обязательных полей. Подробности в error_log.csv."
+      }
+    }
+  ],
+  "connections": {
+    "Ручной запуск": {
+      "main": [
+        [
+          {
+            "node": "Две страницы каталога",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ежедневно в 09 00": {
+      "main": [
+        [
+          {
+            "node": "Две страницы каталога",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Две страницы каталога": {
+      "main": [
+        [
+          {
+            "node": "Ссылки из HTML",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Описание ошибки",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ссылки из HTML": {
+      "main": [
+        [
+          {
+            "node": "Развернуть ссылки",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Развернуть ссылки": {
+      "main": [
+        [
+          {
+            "node": "Полные URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Полные URL": {
+      "main": [
+        [
+          {
+            "node": "Обход карточек",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Обход карточек": {
+      "main": [
+        [
+          {
+            "node": "Удалить дубликаты",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Загрузить карточку",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Загрузить карточку": {
+      "main": [
+        [
+          {
+            "node": "Поля карточки",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Описание ошибки",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Поля карточки": {
+      "main": [
+        [
+          {
+            "node": "Обязательные поля",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Обязательные поля": {
+      "main": [
+        [
+          {
+            "node": "Привести типы",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Описание ошибки",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Привести типы": {
+      "main": [
+        [
+          {
+            "node": "Пауза 1 секунда",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Пауза 1 секунда": {
+      "main": [
+        [
+          {
+            "node": "Обход карточек",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Удалить дубликаты": {
+      "main": [
+        [
+          {
+            "node": "Числовые типы",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Числовые типы": {
+      "main": [
+        [
+          {
+            "node": "Создать CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Создать CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Описание ошибки": {
+      "main": [
+        [
+          {
+            "node": "Ошибка в CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ошибка в CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить ошибку",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Сохранить ошибку": {
+      "main": [
+        [
+          {
+            "node": "Уведомить об ошибке",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "versionId": "bc38e433-75b8-442e-a2e1-9e5a61587197",
+  "tags": []
+}

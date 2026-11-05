@@ -1,0 +1,37 @@
+{
+  "resume": {
+    "first": "20261026_000909_resume_stop",
+    "second": "20261026_000909_resume_continue",
+    "database": "data/resume_20261026_000909.db",
+    "jobdir": "jobstate\\books_20261026_000909",
+    "paused_files": [
+      {
+        "name": "requests.seen",
+        "bytes": 946
+      },
+      {
+        "name": "spider.state",
+        "bytes": 5
+      },
+      {
+        "name": "requests.queue\\active.json",
+        "bytes": 30
+      },
+      {
+        "name": "requests.queue\\books.toscrape.com-afe4f8e70b9b71ee2e80f5d34fad2a07\\0",
+        "bytes": 5640
+      },
+      {
+        "name": "requests.queue\\books.toscrape.com-afe4f8e70b9b71ee2e80f5d34fad2a07\\1",
+        "bytes": 337
+      }
+    ],
+    "total_records": 100,
+    "repeated_parsed_urls": []
+  },
+  "cache": {
+    "cold": "20261026_000909_cache_cold",
+    "warm": "20261026_000909_cache_warm",
+    "path": "data\\httpcache_20261026_000909"
+  }
+}

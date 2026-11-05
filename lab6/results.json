@@ -1,0 +1,419 @@
+{
+  "clean/contract_checks.json": [
+    {
+      "check": "Отрицательная цена",
+      "result": "отклонено",
+      "field": "('value',)",
+      "message": "Input should be greater than 0",
+      "payload": {
+        "business_key": "books:1dfe412b8ac00530",
+        "source": "books",
+        "kind": "book",
+        "source_id": "1dfe412b8ac00530",
+        "title": "The Black Maria",
+        "value": "-1",
+        "unit": "GBP",
+        "stock": 19,
+        "rating": 1,
+        "category": "Poetry",
+        "year": null,
+        "country_code": null,
+        "source_url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+        "collected_at": "2026-10-25 19:15:39.596912+00:00",
+        "parser_version": "lab5-html-1.0",
+        "status": 200
+      }
+    },
+    {
+      "check": "Пустое название",
+      "result": "отклонено",
+      "field": "('title',)",
+      "message": "String should have at least 2 characters",
+      "payload": {
+        "business_key": "books:1dfe412b8ac00530",
+        "source": "books",
+        "kind": "book",
+        "source_id": "1dfe412b8ac00530",
+        "title": "",
+        "value": "52.15",
+        "unit": "GBP",
+        "stock": 19,
+        "rating": 1,
+        "category": "Poetry",
+        "year": null,
+        "country_code": null,
+        "source_url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+        "collected_at": "2026-10-25 19:15:39.596912+00:00",
+        "parser_version": "lab5-html-1.0",
+        "status": 200
+      }
+    },
+    {
+      "check": "Рейтинг 8",
+      "result": "отклонено",
+      "field": "('rating',)",
+      "message": "Input should be less than or equal to 5",
+      "payload": {
+        "business_key": "books:1dfe412b8ac00530",
+        "source": "books",
+        "kind": "book",
+        "source_id": "1dfe412b8ac00530",
+        "title": "The Black Maria",
+        "value": "52.15",
+        "unit": "GBP",
+        "stock": 19,
+        "rating": 8,
+        "category": "Poetry",
+        "year": null,
+        "country_code": null,
+        "source_url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+        "collected_at": "2026-10-25 19:15:39.596912+00:00",
+        "parser_version": "lab5-html-1.0",
+        "status": 200
+      }
+    },
+    {
+      "check": "Остаток -2",
+      "result": "отклонено",
+      "field": "('stock',)",
+      "message": "Input should be greater than or equal to 0",
+      "payload": {
+        "business_key": "books:1dfe412b8ac00530",
+        "source": "books",
+        "kind": "book",
+        "source_id": "1dfe412b8ac00530",
+        "title": "The Black Maria",
+        "value": "52.15",
+        "unit": "GBP",
+        "stock": -2,
+        "rating": 1,
+        "category": "Poetry",
+        "year": null,
+        "country_code": null,
+        "source_url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+        "collected_at": "2026-10-25 19:15:39.596912+00:00",
+        "parser_version": "lab5-html-1.0",
+        "status": 200
+      }
+    },
+    {
+      "check": "Дата без зоны",
+      "result": "отклонено",
+      "field": "('collected_at',)",
+      "message": "Value error, Дата должна содержать часовой пояс",
+      "payload": {
+        "business_key": "books:1dfe412b8ac00530",
+        "source": "books",
+        "kind": "book",
+        "source_id": "1dfe412b8ac00530",
+        "title": "The Black Maria",
+        "value": "52.15",
+        "unit": "GBP",
+        "stock": 19,
+        "rating": 1,
+        "category": "Poetry",
+        "year": null,
+        "country_code": null,
+        "source_url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+        "collected_at": "2026-10-26T10:00:00",
+        "parser_version": "lab5-html-1.0",
+        "status": 200
+      }
+    },
+    {
+      "check": "Чужой URL",
+      "result": "отклонено",
+      "field": "('source_url',)",
+      "message": "Value error, Нужен HTTPS URL одного из двух источников",
+      "payload": {
+        "business_key": "books:1dfe412b8ac00530",
+        "source": "books",
+        "kind": "book",
+        "source_id": "1dfe412b8ac00530",
+        "title": "The Black Maria",
+        "value": "52.15",
+        "unit": "GBP",
+        "stock": 19,
+        "rating": 1,
+        "category": "Poetry",
+        "year": null,
+        "country_code": null,
+        "source_url": "https://example.org/book",
+        "collected_at": "2026-10-25 19:15:39.596912+00:00",
+        "parser_version": "lab5-html-1.0",
+        "status": 200
+      }
+    },
+    {
+      "check": "Валюта книги",
+      "result": "отклонено",
+      "field": "()",
+      "message": "Value error, Книга: источник books, GBP, остаток и рейтинг обязательны",
+      "payload": {
+        "business_key": "books:1dfe412b8ac00530",
+        "source": "books",
+        "kind": "book",
+        "source_id": "1dfe412b8ac00530",
+        "title": "The Black Maria",
+        "value": "52.15",
+        "unit": "persons",
+        "stock": 19,
+        "rating": 1,
+        "category": "Poetry",
+        "year": null,
+        "country_code": null,
+        "source_url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+        "collected_at": "2026-10-25 19:15:39.596912+00:00",
+        "parser_version": "lab5-html-1.0",
+        "status": 200
+      }
+    }
+  ],
+  "clean/database_checks.json": [
+    {
+      "check": "CHECK отрицательного значения",
+      "result": "отклонено",
+      "message": "CHECK constraint failed: typeof(value_minor)='integer' AND value_minor>0 AND value_minor<=200000000000"
+    },
+    {
+      "check": "Дубликат ключа",
+      "result": "отклонено",
+      "message": "UNIQUE constraint failed: records.source, records.source_id"
+    }
+  ],
+  "clean/format_types.json": {
+    "parquet_schema": "business_key: large_string\nsource: large_string\nkind: large_string\nsource_id: large_string\ntitle: large_string\nvalue: decimal128(14, 2)\nunit: large_string\nstock: int64\nrating: int64\ncategory: large_string\nyear: int64\ncountry_code: large_string\nsource_url: large_string\ncollected_at: timestamp[us, tz=UTC]\nparser_version: large_string\nstatus: int64\ncode: large_string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2040",
+    "csv_explicit_code": "000001",
+    "note": "Для CSV и JSONL нужны явные типы; деньги из текста преобразуются через Decimal."
+  },
+  "clean/idempotency.json": [
+    {
+      "run": "1. Исходный",
+      "rows": 661,
+      "changed": 661,
+      "history_rows": 661,
+      "loaded_at": "2026-10-25T21:35:48.677588+00:00"
+    },
+    {
+      "run": "2. Повторный",
+      "rows": 661,
+      "changed": 0,
+      "history_rows": 661,
+      "loaded_at": "2026-10-25T21:35:48.699309+00:00"
+    },
+    {
+      "run": "3. Две тестовые цены",
+      "rows": 661,
+      "changed": 2,
+      "history_rows": 663,
+      "loaded_at": "2026-10-25T21:35:48.712544+00:00"
+    }
+  ],
+  "clean/load_result.json": {
+    "rows": 661,
+    "changed": 0,
+    "changed_keys": [],
+    "history_rows": 661,
+    "loaded_at": "2026-10-25T21:53:46.502188+00:00"
+  },
+  "clean/previous_run.json": {
+    "records": 661,
+    "checked_at": "2026-10-25T21:53:46.493610+00:00"
+  },
+  "clean/quality.json": {
+    "checked_at": "2026-10-25T21:53:46.493610+00:00",
+    "records": 661,
+    "raw_records": 1175,
+    "previous_records": 661,
+    "metrics": [
+      {
+        "metric": "Полнота обязательных",
+        "value": 1.0,
+        "green": 1,
+        "yellow": 0.99,
+        "direction": ">=",
+        "status": "green",
+        "reason": "Обязательные поля нужны всем представлениям"
+      },
+      {
+        "metric": "Полнота необязательных",
+        "value": 1.0,
+        "green": 0.95,
+        "yellow": 0.8,
+        "direction": ">=",
+        "status": "green",
+        "reason": "Категория оценивается только у книг, к API неприменима"
+      },
+      {
+        "metric": "Уникальность ключей",
+        "value": 1.0,
+        "green": 1,
+        "yellow": 0.99,
+        "direction": ">=",
+        "status": "green",
+        "reason": "Дубли искажают агрегаты"
+      },
+      {
+        "metric": "Валидность от raw",
+        "value": 0.961702,
+        "green": 0.95,
+        "yellow": 0.9,
+        "direction": ">=",
+        "status": "green",
+        "reason": "Контракт проверяется до удаления повторов; повтор может быть валидным"
+      },
+      {
+        "metric": "Доля невалидных строк",
+        "value": 0.031489,
+        "green": 0.05,
+        "yellow": 0.1,
+        "direction": "<=",
+        "status": "green",
+        "reason": "Отбраковка по типам/правилам; удаления повторов считаются отдельно"
+      },
+      {
+        "metric": "Доля удаления повторов",
+        "value": 0.405957,
+        "green": 0.1,
+        "yellow": 0.5,
+        "direction": "<=",
+        "status": "yellow",
+        "reason": "Повторная доставка допустима, но более 10% требует внимания; выше 50% блокирует mart"
+      },
+      {
+        "metric": "Согласованность правил",
+        "value": 1.0,
+        "green": 1,
+        "yellow": 0.99,
+        "direction": ">=",
+        "status": "green",
+        "reason": "Ключ, единицы и предметные диапазоны должны совпадать"
+      },
+      {
+        "metric": "Возраст данных, дней",
+        "value": 0.256877,
+        "green": 7,
+        "yellow": 30,
+        "direction": "<=",
+        "status": "green",
+        "reason": "Возраст с момента получения, год наблюдения хранится отдельно"
+      },
+      {
+        "metric": "Изменение объёма",
+        "value": 0.0,
+        "green": 0.1,
+        "yellow": 0.2,
+        "direction": "<=",
+        "status": "green",
+        "reason": "Падение более 20% требует остановки"
+      }
+    ],
+    "status": "yellow",
+    "rejected_invalid": 37,
+    "removed_duplicates": 477,
+    "total_removed_fraction": 0.4374468085106383,
+    "contract_valid_raw": 1130,
+    "reject_reasons": {
+      "обязательное поле пусто или не удалось разобрать тип": 27,
+      "полный дубль": 20,
+      "дубль бизнес-ключа": 449,
+      "почти-дубль": 8,
+      "Input should be greater than 0": 5,
+      "Input should be greater than or equal to 0": 5
+    }
+  },
+  "clean/rebuild_proof.json": {
+    "raw_sha256_before": {
+      "books.jsonl": "d350b6773947aeb56b389a390170c7c2cc21e5b9f1d84c7ad9a39cf4556ef749",
+      "quality_demo.jsonl": "e153422ef1d803d9ce5cb5108f171271f98efc6085aa340ea2ad53cc7370b427",
+      "worldbank.jsonl": "c56959d99bd9403dbdce4ed9dfb4f9bfd17158a917bee765b94cc866a9beb42f"
+    },
+    "raw_sha256_after": {
+      "books.jsonl": "d350b6773947aeb56b389a390170c7c2cc21e5b9f1d84c7ad9a39cf4556ef749",
+      "quality_demo.jsonl": "e153422ef1d803d9ce5cb5108f171271f98efc6085aa340ea2ad53cc7370b427",
+      "worldbank.jsonl": "c56959d99bd9403dbdce4ed9dfb4f9bfd17158a917bee765b94cc866a9beb42f"
+    },
+    "clean_logical_sha256": "bc5286198fbee061e8cfaa929017850e6897d62554f3703e14d4585f084cb817",
+    "records": 661,
+    "offline": true,
+    "network_requests": 0
+  },
+  "clean/red_gate_demo.json": {
+    "blocked": true,
+    "message": "Загрузка mart остановлена: Полнота обязательных"
+  },
+  "mart/partition_read.json": {
+    "file": "mart/snapshots/dt=2026-10-25/part-000.parquet",
+    "rows_read": 661
+  },
+  "nocode/execution_summary.json": {
+    "status": "success",
+    "started_at": "2026-10-25T21:44:12.496Z",
+    "stopped_at": "2026-10-25T21:44:13.344Z",
+    "nodes": [
+      {
+        "name": "Ручной запуск",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Читать исходную таблицу",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Разобрать CSV",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Нормализовать поля",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Удалить дубликаты",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Проверить строку",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Корректные строки",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Результат в CSV",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Сохранить Результат",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Отбракованные строки",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Отбраковку в CSV",
+        "runs": 1,
+        "status": "success"
+      },
+      {
+        "name": "Сохранить Отбраковку",
+        "runs": 1,
+        "status": "success"
+      }
+    ],
+    "seconds": 0.848,
+    "records": 40,
+    "rejects": 4
+  }
+}

@@ -1,0 +1,4 @@
+﻿format,rows,bytes,full_read_ms,three_columns_ms,date_type,value_python_type,code_type,first_code
+CSV,661,185099,1.059,0.75,str,float64,int64,1
+JSONL,661,348096,6.885,7.392,"datetime64[us, UTC]",float64,int64,1
+Parquet,661,34063,2.839,2.134,"datetime64[us, UTC]",Decimal,str,000001

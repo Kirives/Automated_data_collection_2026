@@ -1,0 +1,652 @@
+﻿country_code,country,region,income_group,capital,year,period,population,population_million,gdp_per_capita_usd
+ABW,Aruba,Latin America & Caribbean ,High income,Oranjestad,2020,2020-01-01 00:00:00+00:00,108587.0,0.108587,22664.3709949437
+ABW,Aruba,Latin America & Caribbean ,High income,Oranjestad,2021,2021-01-01 00:00:00+00:00,107700.0,0.1077,26827.3447869986
+ABW,Aruba,Latin America & Caribbean ,High income,Oranjestad,2022,2022-01-01 00:00:00+00:00,107310.0,0.10731,31000.5713798732
+AFG,Afghanistan,"Middle East, North Africa, Afghanistan & Pakistan",Low income,Kabul,2020,2020-01-01 00:00:00+00:00,39068979.0,39.068979,510.787063366811
+AFG,Afghanistan,"Middle East, North Africa, Afghanistan & Pakistan",Low income,Kabul,2021,2021-01-01 00:00:00+00:00,40000412.0,40.000412,356.496214115892
+AFG,Afghanistan,"Middle East, North Africa, Afghanistan & Pakistan",Low income,Kabul,2022,2022-01-01 00:00:00+00:00,40578842.0,40.578842,357.261152798144
+AGO,Angola,Sub-Saharan Africa ,Lower middle income,Luanda,2020,2020-01-01 00:00:00+00:00,33451132.0,33.451132,1749.1794838482
+AGO,Angola,Sub-Saharan Africa ,Lower middle income,Luanda,2021,2021-01-01 00:00:00+00:00,34532429.0,34.532429,2266.96834861584
+AGO,Angola,Sub-Saharan Africa ,Lower middle income,Luanda,2022,2022-01-01 00:00:00+00:00,35635029.0,35.635029,3598.53669077341
+ALB,Albania,Europe & Central Asia,Upper middle income,Tirana,2020,2020-01-01 00:00:00+00:00,2528480.0,2.52848,6027.91350716348
+ALB,Albania,Europe & Central Asia,Upper middle income,Tirana,2021,2021-01-01 00:00:00+00:00,2489762.0,2.489762,7242.45513146613
+ALB,Albania,Europe & Central Asia,Upper middle income,Tirana,2022,2022-01-01 00:00:00+00:00,2451636.0,2.451636,7756.96188744253
+AND,Andorra,Europe & Central Asia,High income,Andorra la Vella,2020,2020-01-01 00:00:00+00:00,77380.0,0.07738,37361.090067211
+AND,Andorra,Europe & Central Asia,High income,Andorra la Vella,2021,2021-01-01 00:00:00+00:00,78364.0,0.078364,42425.6996761083
+AND,Andorra,Europe & Central Asia,High income,Andorra la Vella,2022,2022-01-01 00:00:00+00:00,79705.0,0.079705,42414.0590111349
+ARE,United Arab Emirates,"Middle East, North Africa, Afghanistan & Pakistan",High income,Abu Dhabi,2020,2020-01-01 00:00:00+00:00,9401038.0,9.401038,37991.738387966
+ARE,United Arab Emirates,"Middle East, North Africa, Afghanistan & Pakistan",High income,Abu Dhabi,2021,2021-01-01 00:00:00+00:00,9575152.0,9.575152,44118.4936214315
+ARE,United Arab Emirates,"Middle East, North Africa, Afghanistan & Pakistan",High income,Abu Dhabi,2022,2022-01-01 00:00:00+00:00,10074977.0,10.074977,50759.7590190204
+ARG,Argentina,Latin America & Caribbean ,Upper middle income,Buenos Aires,2020,2020-01-01 00:00:00+00:00,45191965.0,45.191965,8535.59938004389
+ARG,Argentina,Latin America & Caribbean ,Upper middle income,Buenos Aires,2021,2021-01-01 00:00:00+00:00,45312281.0,45.312281,10738.0179223384
+ARG,Argentina,Latin America & Caribbean ,Upper middle income,Buenos Aires,2022,2022-01-01 00:00:00+00:00,45407904.0,45.407904,13962.1894087223
+ARM,Armenia,Europe & Central Asia,Upper middle income,Yerevan,2020,2020-01-01 00:00:00+00:00,2961500.0,2.9615,4268.68093304583
+ARM,Armenia,Europe & Central Asia,Upper middle income,Yerevan,2021,2021-01-01 00:00:00+00:00,2962300.0,2.9623,4685.17997128509
+ARM,Armenia,Europe & Central Asia,Upper middle income,Yerevan,2022,2022-01-01 00:00:00+00:00,2969200.0,2.9692,6571.97445545099
+ASM,American Samoa,East Asia & Pacific,High income,,2020,2020-01-01 00:00:00+00:00,49761.0,0.049761,14489.2586563775
+ASM,American Samoa,East Asia & Pacific,High income,,2021,2021-01-01 00:00:00+00:00,49225.0,0.049225,15236.1604875571
+ASM,American Samoa,East Asia & Pacific,High income,,2022,2022-01-01 00:00:00+00:00,48342.0,0.048342,18017.4589383973
+ATG,Antigua and Barbuda,Latin America & Caribbean ,High income,St. John's,2020,2020-01-01 00:00:00+00:00,91846.0,0.091846,15369.6082250401
+ATG,Antigua and Barbuda,Latin America & Caribbean ,High income,St. John's,2021,2021-01-01 00:00:00+00:00,92349.0,0.092349,17348.6006987182
+ATG,Antigua and Barbuda,Latin America & Caribbean ,High income,St. John's,2022,2022-01-01 00:00:00+00:00,92840.0,0.09284,20003.3909394099
+AUS,Australia,East Asia & Pacific,High income,Canberra,2020,2020-01-01 00:00:00+00:00,25649248.0,25.649248,51983.4523666382
+AUS,Australia,East Asia & Pacific,High income,Canberra,2021,2021-01-01 00:00:00+00:00,25685412.0,25.685412,60758.9044397144
+AUS,Australia,East Asia & Pacific,High income,Canberra,2022,2022-01-01 00:00:00+00:00,26018721.0,26.018721,65169.5191118657
+AUT,Austria,Europe & Central Asia,High income,Vienna,2020,2020-01-01 00:00:00+00:00,8916864.0,8.916864,48716.4098900349
+AUT,Austria,Europe & Central Asia,High income,Vienna,2021,2021-01-01 00:00:00+00:00,8955797.0,8.955797,53648.6437976214
+AUT,Austria,Europe & Central Asia,High income,Vienna,2022,2022-01-01 00:00:00+00:00,9041851.0,9.041851,52336.7725223758
+AZE,Azerbaijan,Europe & Central Asia,Upper middle income,Baku,2020,2020-01-01 00:00:00+00:00,10093121.0,10.093121,4229.91064904503
+AZE,Azerbaijan,Europe & Central Asia,Upper middle income,Baku,2021,2021-01-01 00:00:00+00:00,10137750.0,10.13775,5408.04535175023
+AZE,Azerbaijan,Europe & Central Asia,Upper middle income,Baku,2022,2022-01-01 00:00:00+00:00,10141756.0,10.141756,7770.594223351
+BDI,Burundi,Sub-Saharan Africa ,Low income,Bujumbura,2020,2020-01-01 00:00:00+00:00,12617036.0,12.617036,252.702452750006
+BDI,Burundi,Sub-Saharan Africa ,Low income,Bujumbura,2021,2021-01-01 00:00:00+00:00,12965481.0,12.965481,264.172844085398
+BDI,Burundi,Sub-Saharan Africa ,Low income,Bujumbura,2022,2022-01-01 00:00:00+00:00,13321097.0,13.321097,301.832255755105
+BEL,Belgium,Europe & Central Asia,High income,Brussels,2020,2020-01-01 00:00:00+00:00,11538604.0,11.538604,45906.2875805246
+BEL,Belgium,Europe & Central Asia,High income,Brussels,2021,2021-01-01 00:00:00+00:00,11586195.0,11.586195,51658.238294958
+BEL,Belgium,Europe & Central Asia,High income,Brussels,2022,2022-01-01 00:00:00+00:00,11680210.0,11.68021,50639.0264882739
+BEN,Benin,Sub-Saharan Africa ,Lower middle income,Porto-Novo,2020,2020-01-01 00:00:00+00:00,13070169.0,13.070169,1200.19426557789
+BEN,Benin,Sub-Saharan Africa ,Lower middle income,Porto-Novo,2021,2021-01-01 00:00:00+00:00,13413417.0,13.413417,1318.65158075198
+BEN,Benin,Sub-Saharan Africa ,Lower middle income,Porto-Novo,2022,2022-01-01 00:00:00+00:00,13759501.0,13.759501,1266.42711031904
+BFA,Burkina Faso,Sub-Saharan Africa ,Low income,Ouagadougou,2020,2020-01-01 00:00:00+00:00,21478690.0,21.47869,825.237038782475
+BFA,Burkina Faso,Sub-Saharan Africa ,Low income,Ouagadougou,2021,2021-01-01 00:00:00+00:00,21995243.0,21.995243,895.535288442991
+BFA,Burkina Faso,Sub-Saharan Africa ,Low income,Ouagadougou,2022,2022-01-01 00:00:00+00:00,22509038.0,22.509038,827.330843486661
+BGD,Bangladesh,South Asia,Lower middle income,Dhaka,2020,2020-01-01 00:00:00+00:00,166298024.0,166.298024,2248.85078828233
+BGD,Bangladesh,South Asia,Lower middle income,Dhaka,2021,2021-01-01 00:00:00+00:00,167658854.0,167.658854,2482.84917843357
+BGD,Bangladesh,South Asia,Lower middle income,Dhaka,2022,2022-01-01 00:00:00+00:00,169384897.0,169.384897,2716.48592780431
+BGR,Bulgaria,Europe & Central Asia,High income,Sofia,2020,2020-01-01 00:00:00+00:00,6550696.0,6.550696,10760.7616180234
+BGR,Bulgaria,Europe & Central Asia,High income,Sofia,2021,2021-01-01 00:00:00+00:00,6507301.0,6.507301,12966.8085197381
+BGR,Bulgaria,Europe & Central Asia,High income,Sofia,2022,2022-01-01 00:00:00+00:00,6465097.0,6.465097,13999.9113358453
+BHR,Bahrain,"Middle East, North Africa, Afghanistan & Pakistan",High income,Manama,2020,2020-01-01 00:00:00+00:00,1472204.0,1.472204,24342.8444554718
+BHR,Bahrain,"Middle East, North Africa, Afghanistan & Pakistan",High income,Manama,2021,2021-01-01 00:00:00+00:00,1504365.0,1.504365,27147.8083882286
+BHR,Bahrain,"Middle East, North Africa, Afghanistan & Pakistan",High income,Manama,2022,2022-01-01 00:00:00+00:00,1524693.0,1.524693,30470.5219276023
+BHS,"Bahamas, The",Latin America & Caribbean ,High income,Nassau,2020,2020-01-01 00:00:00+00:00,395863.0,0.395863,26178.7537607708
+BHS,"Bahamas, The",Latin America & Caribbean ,High income,Nassau,2021,2021-01-01 00:00:00+00:00,396373.0,0.396373,30367.8605757708
+BHS,"Bahamas, The",Latin America & Caribbean ,High income,Nassau,2022,2022-01-01 00:00:00+00:00,397538.0,0.397538,34957.1613279737
+BIH,Bosnia and Herzegovina,Europe & Central Asia,Upper middle income,Sarajevo,2020,2020-01-01 00:00:00+00:00,3299349.0,3.299349,6130.31187968266
+BIH,Bosnia and Herzegovina,Europe & Central Asia,Upper middle income,Sarajevo,2021,2021-01-01 00:00:00+00:00,3244907.0,3.244907,7295.34378682258
+BIH,Bosnia and Herzegovina,Europe & Central Asia,Upper middle income,Sarajevo,2022,2022-01-01 00:00:00+00:00,3204802.0,3.204802,7655.59421024383
+BLR,Belarus,Europe & Central Asia,Upper middle income,Minsk,2020,2020-01-01 00:00:00+00:00,9379952.0,9.379952,6542.85579976768
+BLR,Belarus,Europe & Central Asia,Upper middle income,Minsk,2021,2021-01-01 00:00:00+00:00,9302585.0,9.302585,7489.71894713888
+BLR,Belarus,Europe & Central Asia,Upper middle income,Minsk,2022,2022-01-01 00:00:00+00:00,9228071.0,9.228071,7994.64806074889
+BLZ,Belize,Latin America & Caribbean ,Upper middle income,Belmopan,2020,2020-01-01 00:00:00+00:00,390812.0,0.390812,5238.54078175696
+BLZ,Belize,Latin America & Caribbean ,Upper middle income,Belmopan,2021,2021-01-01 00:00:00+00:00,395346.0,0.395346,6142.98930557031
+BLZ,Belize,Latin America & Caribbean ,Upper middle income,Belmopan,2022,2022-01-01 00:00:00+00:00,402733.0,0.402733,7068.21728043145
+BMU,Bermuda,North America,High income,Hamilton,2020,2020-01-01 00:00:00+00:00,64382.0,0.064382,106976.546239632
+BMU,Bermuda,North America,High income,Hamilton,2021,2021-01-01 00:00:00+00:00,64648.0,0.064648,112765.08167306
+BMU,Bermuda,North America,High income,Hamilton,2022,2022-01-01 00:00:00+00:00,64749.0,0.064749,119969.173269085
+BOL,Bolivia,Latin America & Caribbean ,Lower middle income,Sucre,2020,2020-01-01 00:00:00+00:00,11816299.0,11.816299,3580.96761778303
+BOL,Bolivia,Latin America & Caribbean ,Lower middle income,Sucre,2021,2021-01-01 00:00:00+00:00,11937360.0,11.93736,4010.76053686204
+BOL,Bolivia,Latin America & Caribbean ,Lower middle income,Sucre,2022,2022-01-01 00:00:00+00:00,12077154.0,12.077154,4219.46113742445
+BRA,Brazil,Latin America & Caribbean ,Upper middle income,Brasilia,2020,2020-01-01 00:00:00+00:00,208660842.0,208.660842,7074.19378337644
+BRA,Brazil,Latin America & Caribbean ,Upper middle income,Brasilia,2021,2021-01-01 00:00:00+00:00,209550294.0,209.550294,7972.5366498646
+BRA,Brazil,Latin America & Caribbean ,Upper middle income,Brasilia,2022,2022-01-01 00:00:00+00:00,210306415.0,210.306415,9281.33334441234
+BRB,Barbados,Latin America & Caribbean ,High income,Bridgetown,2020,2020-01-01 00:00:00+00:00,281698.0,0.281698,19180.9915228365
+BRB,Barbados,Latin America & Caribbean ,High income,Bridgetown,2021,2021-01-01 00:00:00+00:00,282147.0,0.282147,21084.4013935998
+BRB,Barbados,Latin America & Caribbean ,High income,Bridgetown,2022,2022-01-01 00:00:00+00:00,282318.0,0.282318,24393.2193483944
+BRN,Brunei Darussalam,East Asia & Pacific,High income,Bandar Seri Begawan,2020,2020-01-01 00:00:00+00:00,447404.0,0.447404,26834.3592233943
+BRN,Brunei Darussalam,East Asia & Pacific,High income,Bandar Seri Begawan,2021,2021-01-01 00:00:00+00:00,451721.0,0.451721,31006.9636289785
+BRN,Brunei Darussalam,East Asia & Pacific,High income,Bandar Seri Begawan,2022,2022-01-01 00:00:00+00:00,455370.0,0.45537,36632.9280952155
+BTN,Bhutan,South Asia,Lower middle income,Thimphu,2020,2020-01-01 00:00:00+00:00,770006.0,0.770006,3191.66906999331
+BTN,Bhutan,South Asia,Lower middle income,Thimphu,2021,2021-01-01 00:00:00+00:00,775442.0,0.775442,3570.61257980872
+BTN,Bhutan,South Asia,Lower middle income,Thimphu,2022,2022-01-01 00:00:00+00:00,780914.0,0.780914,3711.32767981591
+BWA,Botswana,Sub-Saharan Africa ,Upper middle income,Gaborone,2020,2020-01-01 00:00:00+00:00,2365894.0,2.365894,6323.2974967659
+BWA,Botswana,Sub-Saharan Africa ,Upper middle income,Gaborone,2021,2021-01-01 00:00:00+00:00,2401441.0,2.401441,7807.88794570471
+BWA,Botswana,Sub-Saharan Africa ,Upper middle income,Gaborone,2022,2022-01-01 00:00:00+00:00,2439892.0,2.439892,8328.7090572666
+CAF,Central African Republic,Sub-Saharan Africa ,Low income,Bangui,2020,2020-01-01 00:00:00+00:00,5026628.0,5.026628,462.879071294011
+CAF,Central African Republic,Sub-Saharan Africa ,Low income,Bangui,2021,2021-01-01 00:00:00+00:00,5112100.0,5.1121,492.263142830507
+CAF,Central African Republic,Sub-Saharan Africa ,Low income,Bangui,2022,2022-01-01 00:00:00+00:00,5098039.0,5.098039,467.359825026238
+CAN,Canada,North America,High income,Ottawa,2020,2020-01-01 00:00:00+00:00,38028638.0,38.028638,43537.8981198851
+CAN,Canada,North America,High income,Ottawa,2021,2021-01-01 00:00:00+00:00,38239864.0,38.239864,52886.6407813788
+CAN,Canada,North America,High income,Ottawa,2022,2022-01-01 00:00:00+00:00,38950132.0,38.950132,56496.9275340663
+CHE,Switzerland,Europe & Central Asia,High income,Berne,2020,2020-01-01 00:00:00+00:00,8638167.0,8.638167,87529.7016394892
+CHE,Switzerland,Europe & Central Asia,High income,Berne,2021,2021-01-01 00:00:00+00:00,8704546.0,8.704546,96582.8687080693
+CHE,Switzerland,Europe & Central Asia,High income,Berne,2022,2022-01-01 00:00:00+00:00,8777088.0,8.777088,97809.095567203
+CHI,Channel Islands,Europe & Central Asia,High income,,2020,2020-01-01 00:00:00+00:00,166235.0,0.166235,56785.9402005039
+CHI,Channel Islands,Europe & Central Asia,High income,,2021,2021-01-01 00:00:00+00:00,166741.0,0.166741,66915.3963925722
+CHI,Channel Islands,Europe & Central Asia,High income,,2022,2022-01-01 00:00:00+00:00,167215.0,0.167215,67627.1417347907
+CHL,Chile,Latin America & Caribbean ,High income,Santiago,2020,2020-01-01 00:00:00+00:00,19370624.0,19.370624,13117.9930230086
+CHL,Chile,Latin America & Caribbean ,High income,Santiago,2021,2021-01-01 00:00:00+00:00,19456334.0,19.456334,16216.1840860289
+CHL,Chile,Latin America & Caribbean ,High income,Santiago,2022,2022-01-01 00:00:00+00:00,19553036.0,19.553036,15399.1044717559
+CHN,China,East Asia & Pacific,Upper middle income,Beijing,2020,2020-01-01 00:00:00+00:00,1411100000.0,1411.1,10627.4637989619
+CHN,China,East Asia & Pacific,Upper middle income,Beijing,2021,2021-01-01 00:00:00+00:00,1412360000.0,1412.36,12887.4357242941
+CHN,China,East Asia & Pacific,Upper middle income,Beijing,2022,2022-01-01 00:00:00+00:00,1412175000.0,1412.175,12970.6056414327
+CIV,Cote d'Ivoire,Sub-Saharan Africa ,Lower middle income,Yamoussoukro,2020,2020-01-01 00:00:00+00:00,28915449.0,28.915449,2179.72934832935
+CIV,Cote d'Ivoire,Sub-Saharan Africa ,Lower middle income,Yamoussoukro,2021,2021-01-01 00:00:00+00:00,29639736.0,29.639736,2455.98127641148
+CIV,Cote d'Ivoire,Sub-Saharan Africa ,Lower middle income,Yamoussoukro,2022,2022-01-01 00:00:00+00:00,30395002.0,30.395002,2333.37128301259
+CMR,Cameroon,Sub-Saharan Africa ,Lower middle income,Yaounde,2020,2020-01-01 00:00:00+00:00,26210558.0,26.210558,1555.60370660749
+CMR,Cameroon,Sub-Saharan Africa ,Lower middle income,Yaounde,2021,2021-01-01 00:00:00+00:00,26915758.0,26.915758,1672.32657340872
+CMR,Cameroon,Sub-Saharan Africa ,Lower middle income,Yaounde,2022,2022-01-01 00:00:00+00:00,27632771.0,27.632771,1604.87726954895
+COD,"Congo, Dem. Rep.",Sub-Saharan Africa ,Low income,Kinshasa,2020,2020-01-01 00:00:00+00:00,95989998.0,95.989998,486.425572682256
+COD,"Congo, Dem. Rep.",Sub-Saharan Africa ,Low income,Kinshasa,2021,2021-01-01 00:00:00+00:00,99148932.0,99.148932,595.743074403567
+COD,"Congo, Dem. Rep.",Sub-Saharan Africa ,Low income,Kinshasa,2022,2022-01-01 00:00:00+00:00,102396968.0,102.396968,687.738587554685
+COG,"Congo, Rep.",Sub-Saharan Africa ,Lower middle income,Brazzaville,2020,2020-01-01 00:00:00+00:00,5752791.0,5.752791,1993.586671931
+COG,"Congo, Rep.",Sub-Saharan Africa ,Lower middle income,Brazzaville,2021,2021-01-01 00:00:00+00:00,5892183.0,5.892183,2516.16255145432
+COG,"Congo, Rep.",Sub-Saharan Africa ,Lower middle income,Brazzaville,2022,2022-01-01 00:00:00+00:00,6035104.0,6.035104,2620.83804267402
+COL,Colombia,Latin America & Caribbean ,Upper middle income,Bogota,2020,2020-01-01 00:00:00+00:00,50629997.0,50.629997,5339.68711357943
+COL,Colombia,Latin America & Caribbean ,Upper middle income,Bogota,2021,2021-01-01 00:00:00+00:00,51188173.0,51.188173,6222.62164397614
+COL,Colombia,Latin America & Caribbean ,Upper middle income,Bogota,2022,2022-01-01 00:00:00+00:00,51737944.0,51.737944,6680.44506854481
+COM,Comoros,Sub-Saharan Africa ,Lower middle income,Moroni,2020,2020-01-01 00:00:00+00:00,802163.0,0.802163,1527.16991011916
+COM,Comoros,Sub-Saharan Africa ,Lower middle income,Moroni,2021,2021-01-01 00:00:00+00:00,818174.0,0.818174,1587.72988658008
+COM,Comoros,Sub-Saharan Africa ,Lower middle income,Moroni,2022,2022-01-01 00:00:00+00:00,834188.0,0.834188,1533.87755393614
+CPV,Cabo Verde,Sub-Saharan Africa ,Upper middle income,Praia,2020,2020-01-01 00:00:00+00:00,514679.0,0.514679,3539.22661248299
+CPV,Cabo Verde,Sub-Saharan Africa ,Upper middle income,Praia,2021,2021-01-01 00:00:00+00:00,516649.0,0.516649,3971.44409203423
+CPV,Cabo Verde,Sub-Saharan Africa ,Upper middle income,Praia,2022,2022-01-01 00:00:00+00:00,519741.0,0.519741,4323.31362032709
+CRI,Costa Rica,Latin America & Caribbean ,High income,San Jose,2020,2020-01-01 00:00:00+00:00,5034320.0,5.03432,12475.6852076814
+CRI,Costa Rica,Latin America & Caribbean ,High income,San Jose,2021,2021-01-01 00:00:00+00:00,5059988.0,5.059988,12962.2716075659
+CRI,Costa Rica,Latin America & Caribbean ,High income,San Jose,2022,2022-01-01 00:00:00+00:00,5081765.0,5.081765,13971.7649991294
+CUB,Cuba,Latin America & Caribbean ,Upper middle income,Havana,2020,2020-01-01 00:00:00+00:00,11176354.0,11.176354,9605.27914559614
+CUB,Cuba,Latin America & Caribbean ,Upper middle income,Havana,2021,2021-01-01 00:00:00+00:00,11122168.0,11.122168,
+CUB,Cuba,Latin America & Caribbean ,Upper middle income,Havana,2022,2022-01-01 00:00:00+00:00,11059820.0,11.05982,
+CUW,Curacao,Latin America & Caribbean ,High income, Willemstad,2020,2020-01-01 00:00:00+00:00,155482.0,0.155482,16299.8134688605
+CUW,Curacao,Latin America & Caribbean ,High income, Willemstad,2021,2021-01-01 00:00:00+00:00,153948.0,0.153948,17795.5826483092
+CUW,Curacao,Latin America & Caribbean ,High income, Willemstad,2022,2022-01-01 00:00:00+00:00,153321.0,0.153321,20057.1404960105
+CYM,Cayman Islands,Latin America & Caribbean ,High income,George Town,2020,2020-01-01 00:00:00+00:00,68684.0,0.068684,82338.7977439023
+CYM,Cayman Islands,Latin America & Caribbean ,High income,George Town,2021,2021-01-01 00:00:00+00:00,70108.0,0.070108,86449.6749037302
+CYM,Cayman Islands,Latin America & Caribbean ,High income,George Town,2022,2022-01-01 00:00:00+00:00,71591.0,0.071591,92937.8838323153
+CYP,Cyprus,Europe & Central Asia,High income,Nicosia,2020,2020-01-01 00:00:00+00:00,1302247.0,1.302247,28130.330078125
+CYP,Cyprus,Europe & Central Asia,High income,Nicosia,2021,2021-01-01 00:00:00+00:00,1317309.0,1.317309,32937.8359375
+CYP,Cyprus,Europe & Central Asia,High income,Nicosia,2022,2022-01-01 00:00:00+00:00,1331370.0,1.33137,33231.05078125
+CZE,Czechia,Europe & Central Asia,High income,Prague,2020,2020-01-01 00:00:00+00:00,10697858.0,10.697858,23472.8915454417
+CZE,Czechia,Europe & Central Asia,High income,Prague,2021,2021-01-01 00:00:00+00:00,10505772.0,10.505772,27696.4619527544
+CZE,Czechia,Europe & Central Asia,High income,Prague,2022,2022-01-01 00:00:00+00:00,10672118.0,10.672118,28282.2236715857
+DEU,Germany,Europe & Central Asia,High income,Berlin,2020,2020-01-01 00:00:00+00:00,83160871.0,83.160871,47394.8734504469
+DEU,Germany,Europe & Central Asia,High income,Berlin,2021,2021-01-01 00:00:00+00:00,83196078.0,83.196078,52349.2459994422
+DEU,Germany,Europe & Central Asia,High income,Berlin,2022,2022-01-01 00:00:00+00:00,83177813.0,83.177813,50506.5179638543
+DJI,Djibouti,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Djibouti,2020,2020-01-01 00:00:00+00:00,1105188.0,1.105188,2844.88810647853
+DJI,Djibouti,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Djibouti,2021,2021-01-01 00:00:00+00:00,1121248.0,1.121248,3025.91126413549
+DJI,Djibouti,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Djibouti,2022,2022-01-01 00:00:00+00:00,1137096.0,1.137096,3133.25779772463
+DMA,Dominica,Latin America & Caribbean ,Upper middle income,Roseau,2020,2020-01-01 00:00:00+00:00,67573.0,0.067573,7827.74842680426
+DMA,Dominica,Latin America & Caribbean ,Upper middle income,Roseau,2021,2021-01-01 00:00:00+00:00,67202.0,0.067202,8376.40414141113
+DMA,Dominica,Latin America & Caribbean ,Upper middle income,Roseau,2022,2022-01-01 00:00:00+00:00,66826.0,0.066826,9323.66089490562
+DNK,Denmark,Europe & Central Asia,High income,Copenhagen,2020,2020-01-01 00:00:00+00:00,5831404.0,5.831404,60985.4885601514
+DNK,Denmark,Europe & Central Asia,High income,Copenhagen,2021,2021-01-01 00:00:00+00:00,5856733.0,5.856733,69340.7334922138
+DNK,Denmark,Europe & Central Asia,High income,Copenhagen,2022,2022-01-01 00:00:00+00:00,5903037.0,5.903037,67781.0940939514
+DOM,Dominican Republic,Latin America & Caribbean ,Upper middle income,Santo Domingo,2020,2020-01-01 00:00:00+00:00,11008300.0,11.0083,7135.22273255899
+DOM,Dominican Republic,Latin America & Caribbean ,Upper middle income,Santo Domingo,2021,2021-01-01 00:00:00+00:00,11123476.0,11.123476,8527.0754858205
+DOM,Dominican Republic,Latin America & Caribbean ,Upper middle income,Santo Domingo,2022,2022-01-01 00:00:00+00:00,11230734.0,11.230734,10104.2464008585
+DZA,Algeria,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Algiers,2020,2020-01-01 00:00:00+00:00,44042091.0,44.042091,3743.5419522929
+DZA,Algeria,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Algiers,2021,2021-01-01 00:00:00+00:00,44761099.0,44.761099,4160.55926736925
+DZA,Algeria,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Algiers,2022,2022-01-01 00:00:00+00:00,45477389.0,45.477389,4960.30334332888
+ECU,Ecuador,Latin America & Caribbean ,Upper middle income,Quito,2020,2020-01-01 00:00:00+00:00,17546065.0,17.546065,5463.64515348598
+ECU,Ecuador,Latin America & Caribbean ,Upper middle income,Quito,2021,2021-01-01 00:00:00+00:00,17682454.0,17.682454,6061.32350181711
+ECU,Ecuador,Latin America & Caribbean ,Upper middle income,Quito,2022,2022-01-01 00:00:00+00:00,17823897.0,17.823897,6515.58528418336
+EGY,"Egypt, Arab Rep.","Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Cairo,2020,2020-01-01 00:00:00+00:00,109315124.0,109.315124,3511.11381026379
+EGY,"Egypt, Arab Rep.","Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Cairo,2021,2021-01-01 00:00:00+00:00,110957008.0,110.957008,3827.35415374308
+EGY,"Egypt, Arab Rep.","Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Cairo,2022,2022-01-01 00:00:00+00:00,112618250.0,112.61825,4233.30783744856
+ERI,Eritrea,Sub-Saharan Africa ,Low income,Asmara,2020,2020-01-01 00:00:00+00:00,3291271.0,3.291271,
+ERI,Eritrea,Sub-Saharan Africa ,Low income,Asmara,2021,2021-01-01 00:00:00+00:00,3350183.0,3.350183,
+ERI,Eritrea,Sub-Saharan Africa ,Low income,Asmara,2022,2022-01-01 00:00:00+00:00,3409447.0,3.409447,
+ESP,Spain,Europe & Central Asia,High income,Madrid,2020,2020-01-01 00:00:00+00:00,47359424.0,47.359424,27233.9426461608
+ESP,Spain,Europe & Central Asia,High income,Madrid,2021,2021-01-01 00:00:00+00:00,47443821.0,47.443821,30799.4775937775
+ESP,Spain,Europe & Central Asia,High income,Madrid,2022,2022-01-01 00:00:00+00:00,47786102.0,47.786102,30319.4987196616
+EST,Estonia,Europe & Central Asia,High income,Tallinn,2020,2020-01-01 00:00:00+00:00,1329522.0,1.329522,23933.9939421065
+EST,Estonia,Europe & Central Asia,High income,Tallinn,2021,2021-01-01 00:00:00+00:00,1330932.0,1.330932,27951.1659277744
+EST,Estonia,Europe & Central Asia,High income,Tallinn,2022,2022-01-01 00:00:00+00:00,1348840.0,1.34884,28340.3826549406
+ETH,Ethiopia,Sub-Saharan Africa ,Low income,Addis Ababa,2020,2020-01-01 00:00:00+00:00,118917671.0,118.917671,829.790982552951
+ETH,Ethiopia,Sub-Saharan Africa ,Low income,Addis Ababa,2021,2021-01-01 00:00:00+00:00,122138588.0,122.138588,893.009835441784
+ETH,Ethiopia,Sub-Saharan Africa ,Low income,Addis Ababa,2022,2022-01-01 00:00:00+00:00,125384287.0,125.384287,982.103161502198
+FIN,Finland,Europe & Central Asia,High income,Helsinki,2020,2020-01-01 00:00:00+00:00,5529543.0,5.529543,48828.6846862799
+FIN,Finland,Europe & Central Asia,High income,Helsinki,2021,2021-01-01 00:00:00+00:00,5541017.0,5.541017,53099.1351400148
+FIN,Finland,Europe & Central Asia,High income,Helsinki,2022,2022-01-01 00:00:00+00:00,5556106.0,5.556106,50440.560224974
+FJI,Fiji,East Asia & Pacific,Upper middle income,Suva,2020,2020-01-01 00:00:00+00:00,914963.0,0.914963,4620.6457238014
+FJI,Fiji,East Asia & Pacific,Upper middle income,Suva,2021,2021-01-01 00:00:00+00:00,916711.0,0.916711,4536.73312110335
+FJI,Fiji,East Asia & Pacific,Upper middle income,Suva,2022,2022-01-01 00:00:00+00:00,919422.0,0.919422,5414.12092119088
+FRA,France,Europe & Central Asia,High income,Paris,2020,2020-01-01 00:00:00+00:00,67601110.0,67.60111,39169.8606000707
+FRA,France,Europe & Central Asia,High income,Paris,2021,2021-01-01 00:00:00+00:00,67842811.0,67.842811,43725.0999521245
+FRA,France,Europe & Central Asia,High income,Paris,2022,2022-01-01 00:00:00+00:00,68184457.0,68.184457,40988.6396406579
+FRO,Faroe Islands,Europe & Central Asia,High income,Torshavn,2020,2020-01-01 00:00:00+00:00,52561.0,0.052561,62247.9273907098
+FRO,Faroe Islands,Europe & Central Asia,High income,Torshavn,2021,2021-01-01 00:00:00+00:00,53291.0,0.053291,69421.6981686515
+FRO,Faroe Islands,Europe & Central Asia,High income,Torshavn,2022,2022-01-01 00:00:00+00:00,53903.0,0.053903,67069.3987440509
+FSM,"Micronesia, Fed. Sts.",East Asia & Pacific,Upper middle income,Palikir,2020,2020-01-01 00:00:00+00:00,110916.0,0.110916,3362.02802120524
+FSM,"Micronesia, Fed. Sts.",East Asia & Pacific,Upper middle income,Palikir,2021,2021-01-01 00:00:00+00:00,111624.0,0.111624,3508.22314197664
+FSM,"Micronesia, Fed. Sts.",East Asia & Pacific,Upper middle income,Palikir,2022,2022-01-01 00:00:00+00:00,112114.0,0.112114,3703.66680343222
+GAB,Gabon,Sub-Saharan Africa ,Upper middle income,Libreville,2020,2020-01-01 00:00:00+00:00,2322539.0,2.322539,6605.80346077904
+GAB,Gabon,Sub-Saharan Africa ,Upper middle income,Libreville,2021,2021-01-01 00:00:00+00:00,2376722.0,2.376722,8181.40914134398
+GAB,Gabon,Sub-Saharan Africa ,Upper middle income,Libreville,2022,2022-01-01 00:00:00+00:00,2430747.0,2.430747,8409.20741452279
+GBR,United Kingdom,Europe & Central Asia,High income,London,2020,2020-01-01 00:00:00+00:00,66740000.0,66.74,40815.1255364787
+GBR,United Kingdom,Europe & Central Asia,High income,London,2021,2021-01-01 00:00:00+00:00,66978000.0,66.978,47695.6491523474
+GBR,United Kingdom,Europe & Central Asia,High income,London,2022,2022-01-01 00:00:00+00:00,67636000.0,67.636,47034.7795621476
+GEO,Georgia,Europe & Central Asia,Upper middle income,Tbilisi,2020,2020-01-01 00:00:00+00:00,3722716.0,3.722716,4300.85701291207
+GEO,Georgia,Europe & Central Asia,Upper middle income,Tbilisi,2021,2021-01-01 00:00:00+00:00,3708610.0,3.70861,5083.60695484577
+GEO,Georgia,Europe & Central Asia,Upper middle income,Tbilisi,2022,2022-01-01 00:00:00+00:00,3712502.0,3.712502,6729.84659930283
+GHA,Ghana,Sub-Saharan Africa ,Lower middle income,Accra,2020,2020-01-01 00:00:00+00:00,31887809.0,31.887809,2195.45481659987
+GHA,Ghana,Sub-Saharan Africa ,Lower middle income,Accra,2021,2021-01-01 00:00:00+00:00,32518665.0,32.518665,2445.18662529344
+GHA,Ghana,Sub-Saharan Africa ,Lower middle income,Accra,2022,2022-01-01 00:00:00+00:00,33149152.0,33.149152,2229.89122654479
+GIB,Gibraltar,Europe & Central Asia,High income,Gibraltar,2020,2020-01-01 00:00:00+00:00,36173.0,0.036173,
+GIB,Gibraltar,Europe & Central Asia,High income,Gibraltar,2021,2021-01-01 00:00:00+00:00,36858.0,0.036858,
+GIB,Gibraltar,Europe & Central Asia,High income,Gibraltar,2022,2022-01-01 00:00:00+00:00,37609.0,0.037609,
+GIN,Guinea,Sub-Saharan Africa ,Lower middle income,Conakry,2020,2020-01-01 00:00:00+00:00,13371183.0,13.371183,1053.66097696415
+GIN,Guinea,Sub-Saharan Africa ,Lower middle income,Conakry,2021,2021-01-01 00:00:00+00:00,13710513.0,13.710513,1244.96550477914
+GIN,Guinea,Sub-Saharan Africa ,Lower middle income,Conakry,2022,2022-01-01 00:00:00+00:00,14055137.0,14.055137,1416.59612011764
+GMB,"Gambia, The",Sub-Saharan Africa ,Low income,Banjul,2020,2020-01-01 00:00:00+00:00,2515733.0,2.515733,720.335143352133
+GMB,"Gambia, The",Sub-Saharan Africa ,Low income,Banjul,2021,2021-01-01 00:00:00+00:00,2576010.0,2.57601,781.890925169531
+GMB,"Gambia, The",Sub-Saharan Africa ,Low income,Banjul,2022,2022-01-01 00:00:00+00:00,2636470.0,2.63647,836.244875868476
+GNB,Guinea-Bissau,Sub-Saharan Africa ,Low income,Bissau,2020,2020-01-01 00:00:00+00:00,2013255.0,2.013255,846.918134967613
+GNB,Guinea-Bissau,Sub-Saharan Africa ,Low income,Bissau,2021,2021-01-01 00:00:00+00:00,2058841.0,2.058841,926.54619187706
+GNB,Guinea-Bissau,Sub-Saharan Africa ,Low income,Bissau,2022,2022-01-01 00:00:00+00:00,2105529.0,2.105529,881.602654162231
+GNQ,Equatorial Guinea,Sub-Saharan Africa ,Upper middle income,Malabo,2020,2020-01-01 00:00:00+00:00,1716468.0,1.716468,5764.05502912947
+GNQ,Equatorial Guinea,Sub-Saharan Africa ,Upper middle income,Malabo,2021,2021-01-01 00:00:00+00:00,1758786.0,1.758786,6945.63069794539
+GNQ,Equatorial Guinea,Sub-Saharan Africa ,Upper middle income,Malabo,2022,2022-01-01 00:00:00+00:00,1803545.0,1.803545,7589.29964909381
+GRC,Greece,Europe & Central Asia,High income,Athens,2020,2020-01-01 00:00:00+00:00,10698599.0,10.698599,17886.733165236
+GRC,Greece,Europe & Central Asia,High income,Athens,2021,2021-01-01 00:00:00+00:00,10570130.0,10.57013,20652.89659591
+GRC,Greece,Europe & Central Asia,High income,Athens,2022,2022-01-01 00:00:00+00:00,10437805.0,10.437805,20884.6773436263
+GRD,Grenada,Latin America & Caribbean ,Upper middle income,St. George's,2020,2020-01-01 00:00:00+00:00,116341.0,0.116341,8968.55890108484
+GRD,Grenada,Latin America & Caribbean ,Upper middle income,St. George's,2021,2021-01-01 00:00:00+00:00,116688.0,0.116688,9617.28902905373
+GRD,Grenada,Latin America & Caribbean ,Upper middle income,St. George's,2022,2022-01-01 00:00:00+00:00,116913.0,0.116913,10469.3867012856
+GRL,Greenland,Europe & Central Asia,High income,Nuuk,2020,2020-01-01 00:00:00+00:00,56367.0,0.056367,54812.6661771023
+GRL,Greenland,Europe & Central Asia,High income,Nuuk,2021,2021-01-01 00:00:00+00:00,56653.0,0.056653,58135.9939910203
+GRL,Greenland,Europe & Central Asia,High income,Nuuk,2022,2022-01-01 00:00:00+00:00,56661.0,0.056661,55635.0006491223
+GTM,Guatemala,Latin America & Caribbean ,Upper middle income,Guatemala City,2020,2020-01-01 00:00:00+00:00,17357325.0,17.357325,4477.61785000665
+GTM,Guatemala,Latin America & Caribbean ,Upper middle income,Guatemala City,2021,2021-01-01 00:00:00+00:00,17598650.0,17.59865,4912.62240414681
+GTM,Guatemala,Latin America & Caribbean ,Upper middle income,Guatemala City,2022,2022-01-01 00:00:00+00:00,17847877.0,17.847877,5356.92435887895
+GUM,Guam,East Asia & Pacific,High income,Hagatna,2020,2020-01-01 00:00:00+00:00,162158.0,0.162158,36482.9363953675
+GUM,Guam,East Asia & Pacific,High income,Hagatna,2021,2021-01-01 00:00:00+00:00,163730.0,0.16373,38074.8793745801
+GUM,Guam,East Asia & Pacific,High income,Hagatna,2022,2022-01-01 00:00:00+00:00,165180.0,0.16518,41833.1517132825
+GUY,Guyana,Latin America & Caribbean ,High income,Georgetown,2020,2020-01-01 00:00:00+00:00,807481.0,0.807481,6775.70939096303
+GUY,Guyana,Latin America & Caribbean ,High income,Georgetown,2021,2021-01-01 00:00:00+00:00,815482.0,0.815482,9860.87014834386
+GUY,Guyana,Latin America & Caribbean ,High income,Georgetown,2022,2022-01-01 00:00:00+00:00,821637.0,0.821637,17913.4928066879
+HKG,"Hong Kong SAR, China",East Asia & Pacific,High income,Hong Kong,2020,2020-01-01 00:00:00+00:00,7481000.0,7.481,46109.2299946609
+HKG,"Hong Kong SAR, China",East Asia & Pacific,High income,Hong Kong,2021,2021-01-01 00:00:00+00:00,7413100.0,7.4131,49770.5642374739
+HKG,"Hong Kong SAR, China",East Asia & Pacific,High income,Hong Kong,2022,2022-01-01 00:00:00+00:00,7346100.0,7.3461,48825.0272275805
+HND,Honduras,Latin America & Caribbean ,Lower middle income,Tegucigalpa,2020,2020-01-01 00:00:00+00:00,10119640.0,10.11964,2307.61494319511
+HND,Honduras,Latin America & Caribbean ,Lower middle income,Tegucigalpa,2021,2021-01-01 00:00:00+00:00,10289877.0,10.289877,2735.14751503977
+HND,Honduras,Latin America & Caribbean ,Lower middle income,Tegucigalpa,2022,2022-01-01 00:00:00+00:00,10463872.0,10.463872,3003.28996826399
+HRV,Croatia,Europe & Central Asia,High income,Zagreb,2020,2020-01-01 00:00:00+00:00,3914206.0,3.914206,14807.5559227544
+HRV,Croatia,Europe & Central Asia,High income,Zagreb,2021,2021-01-01 00:00:00+00:00,3878981.0,3.878981,17788.7601163765
+HRV,Croatia,Europe & Central Asia,High income,Zagreb,2022,2022-01-01 00:00:00+00:00,3855641.0,3.855641,18465.531473659
+HTI,Haiti,Latin America & Caribbean ,Lower middle income,Port-au-Prince,2020,2020-01-01 00:00:00+00:00,11243848.0,11.243848,1290.32538667383
+HTI,Haiti,Latin America & Caribbean ,Lower middle income,Port-au-Prince,2021,2021-01-01 00:00:00+00:00,11374586.0,11.374586,1824.6798742577
+HTI,Haiti,Latin America & Caribbean ,Lower middle income,Port-au-Prince,2022,2022-01-01 00:00:00+00:00,11503606.0,11.503606,1748.40890116803
+HUN,Hungary,Europe & Central Asia,High income,Budapest,2020,2020-01-01 00:00:00+00:00,9670419.0,9.670419,16386.9308821258
+HUN,Hungary,Europe & Central Asia,High income,Budapest,2021,2021-01-01 00:00:00+00:00,9630932.0,9.630932,19030.628130329
+HUN,Hungary,Europe & Central Asia,High income,Budapest,2022,2022-01-01 00:00:00+00:00,9605074.0,9.605074,18428.028825614
+IDN,Indonesia,East Asia & Pacific,Upper middle income,Jakarta,2020,2020-01-01 00:00:00+00:00,274814866.0,274.814866,3853.70288774146
+IDN,Indonesia,East Asia & Pacific,Upper middle income,Jakarta,2021,2021-01-01 00:00:00+00:00,276758053.0,276.758053,4287.17313995098
+IDN,Indonesia,East Asia & Pacific,Upper middle income,Jakarta,2022,2022-01-01 00:00:00+00:00,278830529.0,278.830529,4730.83484836107
+IMN,Isle of Man,Europe & Central Asia,High income,"Douglas, Isle of Man",2020,2020-01-01 00:00:00+00:00,84064.0,0.084064,79513.5330346598
+IMN,Isle of Man,Europe & Central Asia,High income,"Douglas, Isle of Man",2021,2021-01-01 00:00:00+00:00,84106.0,0.084106,94299.969348965
+IMN,Isle of Man,Europe & Central Asia,High income,"Douglas, Isle of Man",2022,2022-01-01 00:00:00+00:00,84132.0,0.084132,88328.548125887
+IND,India,South Asia,Lower middle income,New Delhi,2020,2020-01-01 00:00:00+00:00,1402617695.0,1402.617695,1907.04251637669
+IND,India,South Asia,Lower middle income,New Delhi,2021,2021-01-01 00:00:00+00:00,1414203896.0,1414.203896,2239.61384367482
+IND,India,South Asia,Lower middle income,New Delhi,2022,2022-01-01 00:00:00+00:00,1425423212.0,1425.423212,2279.98145719369
+IRL,Ireland,Europe & Central Asia,High income,Dublin,2020,2020-01-01 00:00:00+00:00,5039747.0,5.039747,86514.0706108754
+IRL,Ireland,Europe & Central Asia,High income,Dublin,2021,2021-01-01 00:00:00+00:00,5110585.0,5.110585,103783.446284479
+IRL,Ireland,Europe & Central Asia,High income,Dublin,2022,2022-01-01 00:00:00+00:00,5212836.0,5.212836,105190.685952731
+IRN,"Iran, Islamic Rep.","Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Tehran,2020,2020-01-01 00:00:00+00:00,87723443.0,87.723443,3202.50003502169
+IRN,"Iran, Islamic Rep.","Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Tehran,2021,2021-01-01 00:00:00+00:00,88455488.0,88.455488,4605.14881318992
+IRN,"Iran, Islamic Rep.","Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Tehran,2022,2022-01-01 00:00:00+00:00,89524246.0,89.524246,4721.20437099984
+IRQ,Iraq,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Baghdad,2020,2020-01-01 00:00:00+00:00,42116605.0,42.116605,4295.18945121228
+IRQ,Iraq,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Baghdad,2021,2021-01-01 00:00:00+00:00,43071211.0,43.071211,4868.49431080783
+IRQ,Iraq,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Baghdad,2022,2022-01-01 00:00:00+00:00,44070551.0,44.070551,6520.73154560584
+ISL,Iceland,Europe & Central Asia,High income,Reykjavik,2020,2020-01-01 00:00:00+00:00,366463.0,0.366463,60127.9393575616
+ISL,Iceland,Europe & Central Asia,High income,Reykjavik,2021,2021-01-01 00:00:00+00:00,372520.0,0.37252,70425.4064277273
+ISL,Iceland,Europe & Central Asia,High income,Reykjavik,2022,2022-01-01 00:00:00+00:00,382003.0,0.382003,76376.9599334915
+ISR,Israel,"Middle East, North Africa, Afghanistan & Pakistan",High income,Jerusalem,2020,2020-01-01 00:00:00+00:00,9215100.0,9.2151,44590.8237253282
+ISR,Israel,"Middle East, North Africa, Afghanistan & Pakistan",High income,Jerusalem,2021,2021-01-01 00:00:00+00:00,9371400.0,9.3714,52258.4693499398
+ISR,Israel,"Middle East, North Africa, Afghanistan & Pakistan",High income,Jerusalem,2022,2022-01-01 00:00:00+00:00,9557500.0,9.5575,54947.2091250715
+ITA,Italy,Europe & Central Asia,High income,Rome,2020,2020-01-01 00:00:00+00:00,59438851.0,59.438851,32091.4866621366
+ITA,Italy,Europe & Central Asia,High income,Rome,2021,2021-01-01 00:00:00+00:00,59133173.0,59.133173,36852.5425414951
+ITA,Italy,Europe & Central Asia,High income,Rome,2022,2022-01-01 00:00:00+00:00,59013667.0,59.013667,35653.9042103495
+JAM,Jamaica,Latin America & Caribbean ,Upper middle income,Kingston,2020,2020-01-01 00:00:00+00:00,2830739.0,2.830739,5299.04530804283
+JAM,Jamaica,Latin America & Caribbean ,Upper middle income,Kingston,2021,2021-01-01 00:00:00+00:00,2837682.0,2.837682,5625.67806271236
+JAM,Jamaica,Latin America & Caribbean ,Upper middle income,Kingston,2022,2022-01-01 00:00:00+00:00,2839144.0,2.839144,6626.47502388538
+JOR,Jordan,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Amman,2020,2020-01-01 00:00:00+00:00,10865228.0,10.865228,4411.48321838396
+JOR,Jordan,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Amman,2021,2021-01-01 00:00:00+00:00,11066356.0,11.066356,4581.71967230365
+JOR,Jordan,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Amman,2022,2022-01-01 00:00:00+00:00,11256263.0,11.256263,4754.41362207378
+JPN,Japan,East Asia & Pacific,High income,Tokyo,2020,2020-01-01 00:00:00+00:00,126261000.0,126.261,41098.9739004553
+JPN,Japan,East Asia & Pacific,High income,Tokyo,2021,2021-01-01 00:00:00+00:00,125681593.0,125.681593,41580.739040705
+JPN,Japan,East Asia & Pacific,High income,Tokyo,2022,2022-01-01 00:00:00+00:00,125124989.0,125.124989,35548.2645222433
+KAZ,Kazakhstan,Europe & Central Asia,Upper middle income,Astana,2020,2020-01-01 00:00:00+00:00,19482117.0,19.482117,8781.50797787648
+KAZ,Kazakhstan,Europe & Central Asia,Upper middle income,Astana,2021,2021-01-01 00:00:00+00:00,19743603.0,19.743603,9983.60103576902
+KAZ,Kazakhstan,Europe & Central Asia,Upper middle income,Astana,2022,2022-01-01 00:00:00+00:00,20034609.0,20.034609,11255.3396437881
+KEN,Kenya,Sub-Saharan Africa ,Lower middle income,Nairobi,2020,2020-01-01 00:00:00+00:00,52217334.0,52.217334,1927.66459027849
+KEN,Kenya,Sub-Saharan Africa ,Lower middle income,Nairobi,2021,2021-01-01 00:00:00+00:00,53219166.0,53.219166,2061.35622089594
+KEN,Kenya,Sub-Saharan Africa ,Lower middle income,Nairobi,2022,2022-01-01 00:00:00+00:00,54252461.0,54.252461,2109.56288513137
+KGZ,Kyrgyz Republic,Europe & Central Asia,Lower middle income,Bishkek,2020,2020-01-01 00:00:00+00:00,6726596.0,6.726596,1229.51766602907
+KGZ,Kyrgyz Republic,Europe & Central Asia,Lower middle income,Bishkek,2021,2021-01-01 00:00:00+00:00,6851224.0,6.851224,1349.99730650542
+KGZ,Kyrgyz Republic,Europe & Central Asia,Lower middle income,Bishkek,2022,2022-01-01 00:00:00+00:00,6975220.0,6.97522,1739.72018344174
+KHM,Cambodia,East Asia & Pacific,Lower middle income,Phnom Penh,2020,2020-01-01 00:00:00+00:00,16725474.0,16.725474,2081.73914242939
+KHM,Cambodia,East Asia & Pacific,Lower middle income,Phnom Penh,2021,2021-01-01 00:00:00+00:00,16974305.0,16.974305,2167.40324198499
+KHM,Cambodia,East Asia & Pacific,Lower middle income,Phnom Penh,2022,2022-01-01 00:00:00+00:00,17201724.0,17.201724,2325.03050040841
+KIR,Kiribati,East Asia & Pacific,Lower middle income,Tarawa,2020,2020-01-01 00:00:00+00:00,126099.0,0.126099,1751.87199542272
+KIR,Kiribati,East Asia & Pacific,Lower middle income,Tarawa,2021,2021-01-01 00:00:00+00:00,128377.0,0.128377,2223.54147866465
+KIR,Kiribati,East Asia & Pacific,Lower middle income,Tarawa,2022,2022-01-01 00:00:00+00:00,130469.0,0.130469,2078.7648751855
+KNA,St. Kitts and Nevis,Latin America & Caribbean ,High income,Basseterre,2020,2020-01-01 00:00:00+00:00,46870.0,0.04687,18859.0190361046
+KNA,St. Kitts and Nevis,Latin America & Caribbean ,High income,Basseterre,2021,2021-01-01 00:00:00+00:00,46763.0,0.046763,18361.1449697886
+KNA,St. Kitts and Nevis,Latin America & Caribbean ,High income,Basseterre,2022,2022-01-01 00:00:00+00:00,46709.0,0.046709,21011.5744209816
+KOR,"Korea, Rep.",East Asia & Pacific,High income,Seoul,2020,2020-01-01 00:00:00+00:00,51836239.0,51.836239,33645.7719545073
+KOR,"Korea, Rep.",East Asia & Pacific,High income,Seoul,2021,2021-01-01 00:00:00+00:00,51769539.0,51.769539,37518.4635305697
+KOR,"Korea, Rep.",East Asia & Pacific,High income,Seoul,2022,2022-01-01 00:00:00+00:00,51672569.0,51.672569,34822.4048404971
+KWT,Kuwait,"Middle East, North Africa, Afghanistan & Pakistan",High income,Kuwait City,2020,2020-01-01 00:00:00+00:00,4400267.0,4.400267,25236.0755848941
+KWT,Kuwait,"Middle East, North Africa, Afghanistan & Pakistan",High income,Kuwait City,2021,2021-01-01 00:00:00+00:00,4360865.0,4.360865,34018.6342592913
+KWT,Kuwait,"Middle East, North Africa, Afghanistan & Pakistan",High income,Kuwait City,2022,2022-01-01 00:00:00+00:00,4589643.0,4.589643,39981.7691035833
+LAO,Lao PDR,East Asia & Pacific,Lower middle income,Vientiane,2020,2020-01-01 00:00:00+00:00,7346533.0,7.346533,2583.77730696131
+LAO,Lao PDR,East Asia & Pacific,Lower middle income,Vientiane,2021,2021-01-01 00:00:00+00:00,7453194.0,7.453194,2526.05105018529
+LAO,Lao PDR,East Asia & Pacific,Lower middle income,Vientiane,2022,2022-01-01 00:00:00+00:00,7559007.0,7.559007,2046.40440255621
+LBN,Lebanon,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Beirut,2020,2020-01-01 00:00:00+00:00,5702398.0,5.702398,5561.19166950397
+LBN,Lebanon,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Beirut,2021,2021-01-01 00:00:00+00:00,5718122.0,5.718122,4045.37391066234
+LBN,Lebanon,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Beirut,2022,2022-01-01 00:00:00+00:00,5744489.0,5.744489,3654.35845534878
+LBR,Liberia,Sub-Saharan Africa ,Low income,Monrovia,2020,2020-01-01 00:00:00+00:00,5149463.0,5.149463,616.787867006715
+LBR,Liberia,Sub-Saharan Africa ,Low income,Monrovia,2021,2021-01-01 00:00:00+00:00,5259323.0,5.259323,667.96610514319
+LBR,Liberia,Sub-Saharan Africa ,Low income,Monrovia,2022,2022-01-01 00:00:00+00:00,5373294.0,5.373294,744.617175237387
+LBY,Libya,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Tripolis,2020,2020-01-01 00:00:00+00:00,7045399.0,7.045399,6650.33810585348
+LBY,Libya,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Tripolis,2021,2021-01-01 00:00:00+00:00,7135175.0,7.135175,4935.82787349801
+LBY,Libya,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,Tripolis,2022,2022-01-01 00:00:00+00:00,7223805.0,7.223805,5986.63694851258
+LCA,St. Lucia,Latin America & Caribbean ,Upper middle income,Castries,2020,2020-01-01 00:00:00+00:00,178250.0,0.17825,8537.11495506727
+LCA,St. Lucia,Latin America & Caribbean ,Upper middle income,Castries,2021,2021-01-01 00:00:00+00:00,178522.0,0.178522,10481.1233971786
+LCA,St. Lucia,Latin America & Caribbean ,Upper middle income,Castries,2022,2022-01-01 00:00:00+00:00,178781.0,0.178781,12976.1489693474
+LIE,Liechtenstein,Europe & Central Asia,High income,Vaduz,2020,2020-01-01 00:00:00+00:00,38901.0,0.038901,164671.093553454
+LIE,Liechtenstein,Europe & Central Asia,High income,Vaduz,2021,2021-01-01 00:00:00+00:00,39182.0,0.039182,201944.830335076
+LIE,Liechtenstein,Europe & Central Asia,High income,Vaduz,2022,2022-01-01 00:00:00+00:00,39493.0,0.039493,188055.003235348
+LKA,Sri Lanka,South Asia,Upper middle income,Colombo,2020,2020-01-01 00:00:00+00:00,21919000.0,21.919,3847.60136741182
+LKA,Sri Lanka,South Asia,Upper middle income,Colombo,2021,2021-01-01 00:00:00+00:00,22156000.0,22.156,3996.96240531688
+LKA,Sri Lanka,South Asia,Upper middle income,Colombo,2022,2022-01-01 00:00:00+00:00,22181000.0,22.181,3342.63650438046
+LSO,Lesotho,Sub-Saharan Africa ,Lower middle income,Maseru,2020,2020-01-01 00:00:00+00:00,2235727.0,2.235727,918.582574704447
+LSO,Lesotho,Sub-Saharan Africa ,Lower middle income,Maseru,2021,2021-01-01 00:00:00+00:00,2261542.0,2.261542,1066.58645143823
+LSO,Lesotho,Sub-Saharan Africa ,Lower middle income,Maseru,2022,2022-01-01 00:00:00+00:00,2286110.0,2.28611,1030.12582947757
+LTU,Lithuania,Europe & Central Asia,High income,Vilnius,2020,2020-01-01 00:00:00+00:00,2810369.0,2.810369,20428.6478157394
+LTU,Lithuania,Europe & Central Asia,High income,Vilnius,2021,2021-01-01 00:00:00+00:00,2808380.0,2.80838,23882.8668916753
+LTU,Lithuania,Europe & Central Asia,High income,Vilnius,2022,2022-01-01 00:00:00+00:00,2831639.0,2.831639,24946.5724005188
+LUX,Luxembourg,Europe & Central Asia,High income,Luxembourg,2020,2020-01-01 00:00:00+00:00,630419.0,0.630419,116860.02817236
+LUX,Luxembourg,Europe & Central Asia,High income,Luxembourg,2021,2021-01-01 00:00:00+00:00,640064.0,0.640064,134965.815442152
+LUX,Luxembourg,Europe & Central Asia,High income,Luxembourg,2022,2022-01-01 00:00:00+00:00,653103.0,0.653103,123719.658915996
+LVA,Latvia,Europe & Central Asia,High income,Riga,2020,2020-01-01 00:00:00+00:00,1900449.0,1.900449,17564.2321549354
+LVA,Latvia,Europe & Central Asia,High income,Riga,2021,2021-01-01 00:00:00+00:00,1884490.0,1.88449,20261.8887788916
+LVA,Latvia,Europe & Central Asia,High income,Riga,2022,2022-01-01 00:00:00+00:00,1879383.0,1.879383,20221.103686109
+MAC,"Macao SAR, China",East Asia & Pacific,High income,Macao,2020,2020-01-01 00:00:00+00:00,685400.0,0.6854,36883.6652578543
+MAC,"Macao SAR, China",East Asia & Pacific,High income,Macao,2021,2021-01-01 00:00:00+00:00,682500.0,0.6825,44884.8961602393
+MAC,"Macao SAR, China",East Asia & Pacific,High income,Macao,2022,2022-01-01 00:00:00+00:00,677300.0,0.6773,36806.891255461
+MAF,St. Martin (French part),Latin America & Caribbean ,High income,Marigot,2020,2020-01-01 00:00:00+00:00,31786.0,0.031786,
+MAF,St. Martin (French part),Latin America & Caribbean ,High income,Marigot,2021,2021-01-01 00:00:00+00:00,29961.0,0.029961,21668.3776525323
+MAF,St. Martin (French part),Latin America & Caribbean ,High income,Marigot,2022,2022-01-01 00:00:00+00:00,28870.0,0.02887,
+MAR,Morocco,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Rabat,2020,2020-01-01 00:00:00+00:00,36584208.0,36.584208,3268.0302734375
+MAR,Morocco,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Rabat,2021,2021-01-01 00:00:00+00:00,36954442.0,36.954442,3785.93627929688
+MAR,Morocco,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Rabat,2022,2022-01-01 00:00:00+00:00,37329064.0,37.329064,3463.1376953125
+MCO,Monaco,Europe & Central Asia,High income,Monaco,2020,2020-01-01 00:00:00+00:00,38050.0,0.03805,176891.806328966
+MCO,Monaco,Europe & Central Asia,High income,Monaco,2021,2021-01-01 00:00:00+00:00,38527.0,0.038527,223823.327192464
+MCO,Monaco,Europe & Central Asia,High income,Monaco,2022,2022-01-01 00:00:00+00:00,38931.0,0.038931,226052.060664649
+MDA,Moldova,Europe & Central Asia,Upper middle income,Chisinau,2020,2020-01-01 00:00:00+00:00,2635130.0,2.63513,4375.7788930524
+MDA,Moldova,Europe & Central Asia,Upper middle income,Chisinau,2021,2021-01-01 00:00:00+00:00,2595809.0,2.595809,5274.60582195352
+MDA,Moldova,Europe & Central Asia,Upper middle income,Chisinau,2022,2022-01-01 00:00:00+00:00,2528654.0,2.528654,5744.29618434435
+MDG,Madagascar,Sub-Saharan Africa ,Low income,Antananarivo,2020,2020-01-01 00:00:00+00:00,28953556.0,28.953556,450.771615205157
+MDG,Madagascar,Sub-Saharan Africa ,Low income,Antananarivo,2021,2021-01-01 00:00:00+00:00,29691083.0,29.691083,483.469463351195
+MDG,Madagascar,Sub-Saharan Africa ,Low income,Antananarivo,2022,2022-01-01 00:00:00+00:00,30437261.0,30.437261,504.059106969168
+MDV,Maldives,South Asia,Upper middle income,Male,2020,2020-01-01 00:00:00+00:00,502118.0,0.502118,7393.8886543933
+MDV,Maldives,South Asia,Upper middle income,Male,2021,2021-01-01 00:00:00+00:00,516154.0,0.516154,10176.143882547
+MDV,Maldives,South Asia,Upper middle income,Male,2022,2022-01-01 00:00:00+00:00,524106.0,0.524106,11786.0191492983
+MEX,Mexico,Latin America & Caribbean ,Upper middle income,Mexico City,2020,2020-01-01 00:00:00+00:00,126799054.0,126.799054,8841.27074929751
+MEX,Mexico,Latin America & Caribbean ,Upper middle income,Mexico City,2021,2021-01-01 00:00:00+00:00,127648148.0,127.648148,10314.0506733708
+MEX,Mexico,Latin America & Caribbean ,Upper middle income,Mexico City,2022,2022-01-01 00:00:00+00:00,128613117.0,128.613117,11405.7940469896
+MHL,Marshall Islands,East Asia & Pacific,Upper middle income,Majuro,2020,2020-01-01 00:00:00+00:00,42706.0,0.042706,5661.96787336674
+MHL,Marshall Islands,East Asia & Pacific,Upper middle income,Majuro,2021,2021-01-01 00:00:00+00:00,41367.0,0.041367,6315.31172190393
+MHL,Marshall Islands,East Asia & Pacific,Upper middle income,Majuro,2022,2022-01-01 00:00:00+00:00,40077.0,0.040077,6455.6603538189
+MKD,North Macedonia,Europe & Central Asia,Upper middle income,Skopje,2020,2020-01-01 00:00:00+00:00,1856124.0,1.856124,6659.59651070776
+MKD,North Macedonia,Europe & Central Asia,Upper middle income,Skopje,2021,2021-01-01 00:00:00+00:00,1837114.0,1.837114,7620.80296977508
+MKD,North Macedonia,Europe & Central Asia,Upper middle income,Skopje,2022,2022-01-01 00:00:00+00:00,1831712.0,1.831712,7606.2375253797
+MLI,Mali,Sub-Saharan Africa ,Low income,Bamako,2020,2020-01-01 00:00:00+00:00,21713836.0,21.713836,953.242943290974
+MLI,Mali,Sub-Saharan Africa ,Low income,Bamako,2021,2021-01-01 00:00:00+00:00,22388630.0,22.38863,1027.27345365357
+MLI,Mali,Sub-Saharan Africa ,Low income,Bamako,2022,2022-01-01 00:00:00+00:00,23072640.0,23.07264,976.914116406452
+MLT,Malta,"Middle East, North Africa, Afghanistan & Pakistan",High income,Valletta,2020,2020-01-01 00:00:00+00:00,515490.0,0.51549,31823.422001724
+MLT,Malta,"Middle East, North Africa, Afghanistan & Pakistan",High income,Valletta,2021,2021-01-01 00:00:00+00:00,518150.0,0.51815,38078.0064279067
+MLT,Malta,"Middle East, North Africa, Afghanistan & Pakistan",High income,Valletta,2022,2022-01-01 00:00:00+00:00,531113.0,0.531113,35658.8318250199
+MMR,Myanmar,East Asia & Pacific,Lower middle income,Nay Pyi Taw,2020,2020-01-01 00:00:00+00:00,53016522.0,53.016522,1490.21683548367
+MMR,Myanmar,East Asia & Pacific,Lower middle income,Nay Pyi Taw,2021,2021-01-01 00:00:00+00:00,53387102.0,53.387102,1242.72134419599
+MMR,Myanmar,East Asia & Pacific,Lower middle income,Nay Pyi Taw,2022,2022-01-01 00:00:00+00:00,53756787.0,53.756787,1158.05005034332
+MNE,Montenegro,Europe & Central Asia,Upper middle income,Podgorica,2020,2020-01-01 00:00:00+00:00,626590.0,0.62659,7555.48699036321
+MNE,Montenegro,Europe & Central Asia,Upper middle income,Podgorica,2021,2021-01-01 00:00:00+00:00,625053.0,0.625053,9315.86435643142
+MNE,Montenegro,Europe & Central Asia,Upper middle income,Podgorica,2022,2022-01-01 00:00:00+00:00,623591.0,0.623591,10038.1849482517
+MNG,Mongolia,East Asia & Pacific,Upper middle income,Ulan Bator,2020,2020-01-01 00:00:00+00:00,3327204.0,3.327204,4001.25193077703
+MNG,Mongolia,East Asia & Pacific,Upper middle income,Ulan Bator,2021,2021-01-01 00:00:00+00:00,3383741.0,3.383741,4517.61578018785
+MNG,Mongolia,East Asia & Pacific,Upper middle income,Ulan Bator,2022,2022-01-01 00:00:00+00:00,3433748.0,3.433748,4993.51487463495
+MNP,Northern Mariana Islands,East Asia & Pacific,High income,Saipan,2020,2020-01-01 00:00:00+00:00,47528.0,0.047528,18220.8382427201
+MNP,Northern Mariana Islands,East Asia & Pacific,High income,Saipan,2021,2021-01-01 00:00:00+00:00,46979.0,0.046979,19455.50139424
+MNP,Northern Mariana Islands,East Asia & Pacific,High income,Saipan,2022,2022-01-01 00:00:00+00:00,46078.0,0.046078,23785.754590043
+MOZ,Mozambique,Sub-Saharan Africa ,Low income,Maputo,2020,2020-01-01 00:00:00+00:00,30783688.0,30.783688,462.433876479921
+MOZ,Mozambique,Sub-Saharan Africa ,Low income,Maputo,2021,2021-01-01 00:00:00+00:00,31707800.0,31.7078,509.907829475551
+MOZ,Mozambique,Sub-Saharan Africa ,Low income,Maputo,2022,2022-01-01 00:00:00+00:00,32656246.0,32.656246,578.273222184503
+MRT,Mauritania,Sub-Saharan Africa ,Lower middle income,Nouakchott,2020,2020-01-01 00:00:00+00:00,4600131.0,4.600131,1795.72437324423
+MRT,Mauritania,Sub-Saharan Africa ,Lower middle income,Nouakchott,2021,2021-01-01 00:00:00+00:00,4734874.0,4.734874,1947.47413907209
+MRT,Mauritania,Sub-Saharan Africa ,Lower middle income,Nouakchott,2022,2022-01-01 00:00:00+00:00,4875637.0,4.875637,1961.28166648869
+MUS,Mauritius,Sub-Saharan Africa ,Upper middle income,Port Louis,2020,2020-01-01 00:00:00+00:00,1266014.0,1.266014,9135.84773751062
+MUS,Mauritius,Sub-Saharan Africa ,Upper middle income,Port Louis,2021,2021-01-01 00:00:00+00:00,1266334.0,1.266334,9177.71195973013
+MUS,Mauritius,Sub-Saharan Africa ,Upper middle income,Port Louis,2022,2022-01-01 00:00:00+00:00,1262523.0,1.262523,10246.5017455553
+MWI,Malawi,Sub-Saharan Africa ,Low income,Lilongwe,2020,2020-01-01 00:00:00+00:00,19533888.0,19.533888,602.507478176106
+MWI,Malawi,Sub-Saharan Africa ,Low income,Lilongwe,2021,2021-01-01 00:00:00+00:00,20047258.0,20.047258,617.446994451007
+MWI,Malawi,Sub-Saharan Africa ,Low income,Lilongwe,2022,2022-01-01 00:00:00+00:00,20568728.0,20.568728,604.269740360317
+MYS,Malaysia,East Asia & Pacific,Upper middle income,Kuala Lumpur,2020,2020-01-01 00:00:00+00:00,33889558.0,33.889558,9957.52626697613
+MYS,Malaysia,East Asia & Pacific,Upper middle income,Kuala Lumpur,2021,2021-01-01 00:00:00+00:00,34282399.0,34.282399,10903.1037480772
+MYS,Malaysia,East Asia & Pacific,Upper middle income,Kuala Lumpur,2022,2022-01-01 00:00:00+00:00,34695493.0,34.695493,11754.5678336248
+NAM,Namibia,Sub-Saharan Africa ,Lower middle income,Windhoek,2020,2020-01-01 00:00:00+00:00,2728762.0,2.728762,3878.58982993966
+NAM,Namibia,Sub-Saharan Africa ,Lower middle income,Windhoek,2021,2021-01-01 00:00:00+00:00,2810548.0,2.810548,4412.8355693052
+NAM,Namibia,Sub-Saharan Africa ,Lower middle income,Windhoek,2022,2022-01-01 00:00:00+00:00,2889662.0,2.889662,4349.79908493314
+NCL,New Caledonia,East Asia & Pacific,High income,Noumea,2020,2020-01-01 00:00:00+00:00,284176.0,0.284176,33270.330597637
+NCL,New Caledonia,East Asia & Pacific,High income,Noumea,2021,2021-01-01 00:00:00+00:00,285214.0,0.285214,35311.5543551452
+NCL,New Caledonia,East Asia & Pacific,High income,Noumea,2022,2022-01-01 00:00:00+00:00,287123.0,0.287123,33516.363085906
+NER,Niger,Sub-Saharan Africa ,Low income,Niamey,2020,2020-01-01 00:00:00+00:00,23717613.0,23.717613,575.451340306915
+NER,Niger,Sub-Saharan Africa ,Low income,Niamey,2021,2021-01-01 00:00:00+00:00,24502140.0,24.50214,609.585703670137
+NER,Niger,Sub-Saharan Africa ,Low income,Niamey,2022,2022-01-01 00:00:00+00:00,25311973.0,25.311973,613.614736429298
+NGA,Nigeria,Sub-Saharan Africa ,Lower middle income,Abuja,2020,2020-01-01 00:00:00+00:00,213996181.0,213.996181,2797.184580679
+NGA,Nigeria,Sub-Saharan Africa ,Lower middle income,Abuja,2021,2021-01-01 00:00:00+00:00,218529286.0,218.529286,2787.48779220991
+NGA,Nigeria,Sub-Saharan Africa ,Lower middle income,Abuja,2022,2022-01-01 00:00:00+00:00,223150896.0,223.150896,2899.16047469267
+NIC,Nicaragua,Latin America & Caribbean ,Lower middle income,Managua,2020,2020-01-01 00:00:00+00:00,6565267.0,6.565267,1938.44704754382
+NIC,Nicaragua,Latin America & Caribbean ,Lower middle income,Managua,2021,2021-01-01 00:00:00+00:00,6644741.0,6.644741,2138.38573878237
+NIC,Nicaragua,Latin America & Caribbean ,Lower middle income,Managua,2022,2022-01-01 00:00:00+00:00,6730654.0,6.730654,2322.89069619459
+NLD,Netherlands,Europe & Central Asia,High income,Amsterdam,2020,2020-01-01 00:00:00+00:00,17441500.0,17.4415,53467.9277413737
+NLD,Netherlands,Europe & Central Asia,High income,Amsterdam,2021,2021-01-01 00:00:00+00:00,17533044.0,17.533044,60141.9880911492
+NLD,Netherlands,Europe & Central Asia,High income,Amsterdam,2022,2022-01-01 00:00:00+00:00,17700982.0,17.700982,59123.318556487
+NOR,Norway,Europe & Central Asia,High income,Oslo,2020,2020-01-01 00:00:00+00:00,5379475.0,5.379475,71057.5879471399
+NOR,Norway,Europe & Central Asia,High income,Oslo,2021,2021-01-01 00:00:00+00:00,5408320.0,5.40832,96442.5552173002
+NOR,Norway,Europe & Central Asia,High income,Oslo,2022,2022-01-01 00:00:00+00:00,5457127.0,5.457127,113122.130765691
+NPL,Nepal,South Asia,Lower middle income,Kathmandu,2020,2020-01-01 00:00:00+00:00,28966574.0,28.966574,1154.21517578318
+NPL,Nepal,South Asia,Lower middle income,Kathmandu,2021,2021-01-01 00:00:00+00:00,29475010.0,29.47501,1252.75076731986
+NPL,Nepal,South Asia,Lower middle income,Kathmandu,2022,2022-01-01 00:00:00+00:00,29715436.0,29.715436,1385.91066002922
+NRU,Naoero,East Asia & Pacific,High income,Yaren,2020,2020-01-01 00:00:00+00:00,11643.0,0.011643,10709.068810538
+NRU,Naoero,East Asia & Pacific,High income,Yaren,2021,2021-01-01 00:00:00+00:00,11709.0,0.011709,12748.1701249353
+NRU,Naoero,East Asia & Pacific,High income,Yaren,2022,2022-01-01 00:00:00+00:00,11801.0,0.011801,15309.8345351924
+NZL,New Zealand,East Asia & Pacific,High income,Wellington,2020,2020-01-01 00:00:00+00:00,5072400.0,5.0724,42054.6743136586
+NZL,New Zealand,East Asia & Pacific,High income,Wellington,2021,2021-01-01 00:00:00+00:00,5084600.0,5.0846,49902.154346032
+NZL,New Zealand,East Asia & Pacific,High income,Wellington,2022,2022-01-01 00:00:00+00:00,5081700.0,5.0817,49141.6316294227
+OMN,Oman,"Middle East, North Africa, Afghanistan & Pakistan",High income,Muscat,2020,2020-01-01 00:00:00+00:00,4522497.0,4.522497,16784.8630630058
+OMN,Oman,"Middle East, North Africa, Afghanistan & Pakistan",High income,Muscat,2021,2021-01-01 00:00:00+00:00,4500424.0,4.500424,19403.4600160211
+OMN,Oman,"Middle East, North Africa, Afghanistan & Pakistan",High income,Muscat,2022,2022-01-01 00:00:00+00:00,4730226.0,4.730226,23223.5829405935
+PAK,Pakistan,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Islamabad,2020,2020-01-01 00:00:00+00:00,235001746.0,235.001746,1278.39735206896
+PAK,Pakistan,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Islamabad,2021,2021-01-01 00:00:00+00:00,239477801.0,239.477801,1455.31922370186
+PAK,Pakistan,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Islamabad,2022,2022-01-01 00:00:00+00:00,243700667.0,243.700667,1538.3228133171
+PAN,Panama,Latin America & Caribbean ,High income,Panama City,2020,2020-01-01 00:00:00+00:00,4293261.0,4.293261,13290.5608347594
+PAN,Panama,Latin America & Caribbean ,High income,Panama City,2021,2021-01-01 00:00:00+00:00,4345405.0,4.345405,15509.8069109784
+PAN,Panama,Latin America & Caribbean ,High income,Panama City,2022,2022-01-01 00:00:00+00:00,4400773.0,4.400773,17378.6070083597
+PER,Peru,Latin America & Caribbean ,Upper middle income,Lima,2020,2020-01-01 00:00:00+00:00,32838579.0,32.838579,6133.32552410183
+PER,Peru,Latin America & Caribbean ,Upper middle income,Lima,2021,2021-01-01 00:00:00+00:00,33155882.0,33.155882,6828.53422535638
+PER,Peru,Latin America & Caribbean ,Upper middle income,Lima,2022,2022-01-01 00:00:00+00:00,33475438.0,33.475438,7353.74598721667
+PHL,Philippines,East Asia & Pacific,Upper middle income,Manila,2020,2020-01-01 00:00:00+00:00,112081264.0,112.081264,3227.57910235199
+PHL,Philippines,East Asia & Pacific,Upper middle income,Manila,2021,2021-01-01 00:00:00+00:00,113100950.0,113.10095,3484.38593882819
+PHL,Philippines,East Asia & Pacific,Upper middle income,Manila,2022,2022-01-01 00:00:00+00:00,113964338.0,113.964338,3548.06930572116
+PLW,Palau,East Asia & Pacific,High income,Melekeok,2020,2020-01-01 00:00:00+00:00,17792.0,0.017792,14556.30954221
+PLW,Palau,East Asia & Pacific,High income,Melekeok,2021,2021-01-01 00:00:00+00:00,17783.0,0.017783,13267.4877340719
+PLW,Palau,East Asia & Pacific,High income,Melekeok,2022,2022-01-01 00:00:00+00:00,17759.0,0.017759,13934.951996171
+PNG,Papua New Guinea,East Asia & Pacific,Lower middle income,Port Moresby,2020,2020-01-01 00:00:00+00:00,9815746.0,9.815746,2429.61134585269
+PNG,Papua New Guinea,East Asia & Pacific,Lower middle income,Port Moresby,2021,2021-01-01 00:00:00+00:00,10012896.0,10.012896,2607.97769973161
+PNG,Papua New Guinea,East Asia & Pacific,Lower middle income,Port Moresby,2022,2022-01-01 00:00:00+00:00,10203169.0,10.203169,3102.29409730005
+POL,Poland,Europe & Central Asia,High income,Warsaw,2020,2020-01-01 00:00:00+00:00,37515748.0,37.515748,16150.9304813473
+POL,Poland,Europe & Central Asia,High income,Warsaw,2021,2021-01-01 00:00:00+00:00,36981559.0,36.981559,18635.5104895754
+POL,Poland,Europe & Central Asia,High income,Warsaw,2022,2022-01-01 00:00:00+00:00,36821749.0,36.821749,18891.2121169279
+PRI,Puerto Rico (US),Latin America & Caribbean ,High income,San Juan,2020,2020-01-01 00:00:00+00:00,3281591.0,3.281591,31427.1034994916
+PRI,Puerto Rico (US),Latin America & Caribbean ,High income,San Juan,2021,2021-01-01 00:00:00+00:00,3262731.0,3.262731,32618.8705106244
+PRI,Puerto Rico (US),Latin America & Caribbean ,High income,San Juan,2022,2022-01-01 00:00:00+00:00,3220148.0,3.220148,35353.5613891039
+PRK,"Korea, Dem. People's Rep.",East Asia & Pacific,Low income,Pyongyang,2020,2020-01-01 00:00:00+00:00,26136312.0,26.136312,
+PRK,"Korea, Dem. People's Rep.",East Asia & Pacific,Low income,Pyongyang,2021,2021-01-01 00:00:00+00:00,26232534.0,26.232534,
+PRK,"Korea, Dem. People's Rep.",East Asia & Pacific,Low income,Pyongyang,2022,2022-01-01 00:00:00+00:00,26328845.0,26.328845,
+PRT,Portugal,Europe & Central Asia,High income,Lisbon,2020,2020-01-01 00:00:00+00:00,10297081.0,10.297081,22299.4044062173
+PRT,Portugal,Europe & Central Asia,High income,Lisbon,2021,2021-01-01 00:00:00+00:00,10361831.0,10.361831,24711.4510062111
+PRT,Portugal,Europe & Central Asia,High income,Lisbon,2022,2022-01-01 00:00:00+00:00,10434332.0,10.434332,24620.5197587181
+PRY,Paraguay,Latin America & Caribbean ,Upper middle income,Asuncion,2020,2020-01-01 00:00:00+00:00,6603739.0,6.603739,5365.47220721191
+PRY,Paraguay,Latin America & Caribbean ,Upper middle income,Asuncion,2021,2021-01-01 00:00:00+00:00,6684182.0,6.684182,5974.9057185863
+PRY,Paraguay,Latin America & Caribbean ,Upper middle income,Asuncion,2022,2022-01-01 00:00:00+00:00,6760464.0,6.760464,6189.10205375331
+PSE,West Bank and Gaza,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,East Jerusalem,2020,2020-01-01 00:00:00+00:00,4803269.0,4.803269,3233.56863835858
+PSE,West Bank and Gaza,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,East Jerusalem,2021,2021-01-01 00:00:00+00:00,4922749.0,4.922749,3678.63565662194
+PSE,West Bank and Gaza,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,East Jerusalem,2022,2022-01-01 00:00:00+00:00,5043612.0,5.043612,3799.95527015163
+PYF,French Polynesia,East Asia & Pacific,High income,Papeete,2020,2020-01-01 00:00:00+00:00,279209.0,0.279209,19966.4838503859
+PYF,French Polynesia,East Asia & Pacific,High income,Papeete,2021,2021-01-01 00:00:00+00:00,279792.0,0.279792,21426.3854449835
+PYF,French Polynesia,East Asia & Pacific,High income,Papeete,2022,2022-01-01 00:00:00+00:00,280378.0,0.280378,20053.9569369322
+QAT,Qatar,"Middle East, North Africa, Afghanistan & Pakistan",High income,Doha,2020,2020-01-01 00:00:00+00:00,2794148.0,2.794148,51683.5054376677
+QAT,Qatar,"Middle East, North Africa, Afghanistan & Pakistan",High income,Doha,2021,2021-01-01 00:00:00+00:00,2504910.0,2.50491,71751.8831257169
+QAT,Qatar,"Middle East, North Africa, Afghanistan & Pakistan",High income,Doha,2022,2022-01-01 00:00:00+00:00,2657333.0,2.657333,88701.463352273
+ROU,Romania,Europe & Central Asia,High income,Bucharest,2020,2020-01-01 00:00:00+00:00,19265250.0,19.26525,13009.1525348396
+ROU,Romania,Europe & Central Asia,High income,Bucharest,2021,2021-01-01 00:00:00+00:00,19122059.0,19.122059,14908.0412813921
+ROU,Romania,Europe & Central Asia,High income,Bucharest,2022,2022-01-01 00:00:00+00:00,19048502.0,19.048502,15503.4691366242
+RUS,Russian Federation,Europe & Central Asia,High income,Moscow,2020,2020-01-01 00:00:00+00:00,145245148.0,145.245148,10108.3271484375
+RUS,Russian Federation,Europe & Central Asia,High income,Moscow,2021,2021-01-01 00:00:00+00:00,144746762.0,144.746762,12425.029296875
+RUS,Russian Federation,Europe & Central Asia,High income,Moscow,2022,2022-01-01 00:00:00+00:00,144236933.0,144.236933,15625.6328125
+RWA,Rwanda,Sub-Saharan Africa ,Low income,Kigali,2020,2020-01-01 00:00:00+00:00,13065837.0,13.065837,802.638686936204
+RWA,Rwanda,Sub-Saharan Africa ,Low income,Kigali,2021,2021-01-01 00:00:00+00:00,13355260.0,13.35526,842.581492947672
+RWA,Rwanda,Sub-Saharan Africa ,Low income,Kigali,2022,2022-01-01 00:00:00+00:00,13651030.0,13.65103,1007.05989322914
+SAU,Saudi Arabia,"Middle East, North Africa, Afghanistan & Pakistan",High income,Riyadh,2020,2020-01-01 00:00:00+00:00,31552510.0,31.55251,24338.8307301067
+SAU,Saudi Arabia,"Middle East, North Africa, Afghanistan & Pakistan",High income,Riyadh,2021,2021-01-01 00:00:00+00:00,30784383.0,30.784383,31920.7653655643
+SAU,Saudi Arabia,"Middle East, North Africa, Afghanistan & Pakistan",High income,Riyadh,2022,2022-01-01 00:00:00+00:00,32175224.0,32.175224,38510.2276211037
+SDN,Sudan,Sub-Saharan Africa ,Low income,Khartoum,2020,2020-01-01 00:00:00+00:00,46789231.0,46.789231,577.795227050781
+SDN,Sudan,Sub-Saharan Africa ,Low income,Khartoum,2021,2021-01-01 00:00:00+00:00,48066924.0,48.066924,712.122009277344
+SDN,Sudan,Sub-Saharan Africa ,Low income,Khartoum,2022,2022-01-01 00:00:00+00:00,49383346.0,49.383346,1046.24084472656
+SEN,Senegal,Sub-Saharan Africa ,Lower middle income,Dakar,2020,2020-01-01 00:00:00+00:00,16789219.0,16.789219,1461.08720350553
+SEN,Senegal,Sub-Saharan Africa ,Lower middle income,Dakar,2021,2021-01-01 00:00:00+00:00,17220867.0,17.220867,1598.10676952274
+SEN,Senegal,Sub-Saharan Africa ,Lower middle income,Dakar,2022,2022-01-01 00:00:00+00:00,17651103.0,17.651103,1574.0281059306
+SGP,Singapore,East Asia & Pacific,High income,Singapur,2020,2020-01-01 00:00:00+00:00,5685807.0,5.685807,61772.5036492256
+SGP,Singapore,East Asia & Pacific,High income,Singapur,2021,2021-01-01 00:00:00+00:00,5453566.0,5.453566,80884.8565369236
+SGP,Singapore,East Asia & Pacific,High income,Singapur,2022,2022-01-01 00:00:00+00:00,5637022.0,5.637022,91227.6970426492
+SLB,Solomon Islands,East Asia & Pacific,Lower middle income,Honiara,2020,2020-01-01 00:00:00+00:00,744498.0,0.744498,2063.32780991967
+SLB,Solomon Islands,East Asia & Pacific,Lower middle income,Honiara,2021,2021-01-01 00:00:00+00:00,762591.0,0.762591,2043.44413170658
+SLB,Solomon Islands,East Asia & Pacific,Lower middle income,Honiara,2022,2022-01-01 00:00:00+00:00,781066.0,0.781066,1877.78104490956
+SLE,Sierra Leone,Sub-Saharan Africa ,Low income,Freetown,2020,2020-01-01 00:00:00+00:00,7912558.0,7.912558,845.277558236182
+SLE,Sierra Leone,Sub-Saharan Africa ,Low income,Freetown,2021,2021-01-01 00:00:00+00:00,8094602.0,8.094602,885.396401613729
+SLE,Sierra Leone,Sub-Saharan Africa ,Low income,Freetown,2022,2022-01-01 00:00:00+00:00,8276807.0,8.276807,860.371067874555
+SLV,El Salvador,Latin America & Caribbean ,Upper middle income,San Salvador,2020,2020-01-01 00:00:00+00:00,6234673.0,6.234673,3997.19279583709
+SLV,El Salvador,Latin America & Caribbean ,Upper middle income,San Salvador,2021,2021-01-01 00:00:00+00:00,6255782.0,6.255782,4642.60743101342
+SLV,El Salvador,Latin America & Caribbean ,Upper middle income,San Salvador,2022,2022-01-01 00:00:00+00:00,6280319.0,6.280319,5074.60050994225
+SMR,San Marino,Europe & Central Asia,High income,San Marino,2020,2020-01-01 00:00:00+00:00,34770.0,0.03477,44426.6259613672
+SMR,San Marino,Europe & Central Asia,High income,San Marino,2021,2021-01-01 00:00:00+00:00,34252.0,0.034252,54168.9744311193
+SMR,San Marino,Europe & Central Asia,High income,San Marino,2022,2022-01-01 00:00:00+00:00,33755.0,0.033755,54264.5837022908
+SOM,"Somalia, Fed. Rep.",Sub-Saharan Africa ,Low income,Mogadishu,2020,2020-01-01 00:00:00+00:00,16651191.0,16.651191,518.16113333875
+SOM,"Somalia, Fed. Rep.",Sub-Saharan Africa ,Low income,Mogadishu,2021,2021-01-01 00:00:00+00:00,17271431.0,17.271431,549.056994756254
+SOM,"Somalia, Fed. Rep.",Sub-Saharan Africa ,Low income,Mogadishu,2022,2022-01-01 00:00:00+00:00,17801897.0,17.801897,573.141165798229
+SRB,Serbia,Europe & Central Asia,Upper middle income,Belgrade,2020,2020-01-01 00:00:00+00:00,6899126.0,6.899126,8098.70955668849
+SRB,Serbia,Europe & Central Asia,Upper middle income,Belgrade,2021,2021-01-01 00:00:00+00:00,6834326.0,6.834326,9680.52798074468
+SRB,Serbia,Europe & Central Asia,Upper middle income,Belgrade,2022,2022-01-01 00:00:00+00:00,6664449.0,6.664449,10024.8191112596
+SSD,South Sudan,Sub-Saharan Africa ,Low income,Juba,2020,2020-01-01 00:00:00+00:00,10698467.0,10.698467,
+SSD,South Sudan,Sub-Saharan Africa ,Low income,Juba,2021,2021-01-01 00:00:00+00:00,10865780.0,10.86578,
+SSD,South Sudan,Sub-Saharan Africa ,Low income,Juba,2022,2022-01-01 00:00:00+00:00,11021177.0,11.021177,
+STP,Sao Tome and Principe,Sub-Saharan Africa ,Lower middle income,Sao Tome,2020,2020-01-01 00:00:00+00:00,217435.0,0.217435,2167.22001796925
+STP,Sao Tome and Principe,Sub-Saharan Africa ,Lower middle income,Sao Tome,2021,2021-01-01 00:00:00+00:00,221961.0,0.221961,2362.58827248102
+STP,Sao Tome and Principe,Sub-Saharan Africa ,Lower middle income,Sao Tome,2022,2022-01-01 00:00:00+00:00,226305.0,0.226305,2389.73729784737
+SUR,Suriname,Latin America & Caribbean ,Upper middle income,Paramaribo,2020,2020-01-01 00:00:00+00:00,612317.0,0.612317,4755.39221710693
+SUR,Suriname,Latin America & Caribbean ,Upper middle income,Paramaribo,2021,2021-01-01 00:00:00+00:00,617896.0,0.617896,5029.84838543953
+SUR,Suriname,Latin America & Caribbean ,Upper middle income,Paramaribo,2022,2022-01-01 00:00:00+00:00,623164.0,0.623164,6084.43876736445
+SVK,Slovak Republic,Europe & Central Asia,High income,Bratislava,2020,2020-01-01 00:00:00+00:00,5458827.0,5.458827,19735.4858280801
+SVK,Slovak Republic,Europe & Central Asia,High income,Bratislava,2021,2021-01-01 00:00:00+00:00,5447247.0,5.447247,22123.3342114545
+SVK,Slovak Republic,Europe & Central Asia,High income,Bratislava,2022,2022-01-01 00:00:00+00:00,5431752.0,5.431752,21317.7943982363
+SVN,Slovenia,Europe & Central Asia,High income,Ljubljana,2020,2020-01-01 00:00:00+00:00,2102419.0,2.102419,25392.0651093612
+SVN,Slovenia,Europe & Central Asia,High income,Ljubljana,2021,2021-01-01 00:00:00+00:00,2108079.0,2.108079,29192.8401933019
+SVN,Slovenia,Europe & Central Asia,High income,Ljubljana,2022,2022-01-01 00:00:00+00:00,2112076.0,2.112076,28360.3041467268
+SWE,Sweden,Europe & Central Asia,High income,Stockholm,2020,2020-01-01 00:00:00+00:00,10353442.0,10.353442,52568.5726980146
+SWE,Sweden,Europe & Central Asia,High income,Stockholm,2021,2021-01-01 00:00:00+00:00,10415811.0,10.415811,60647.5416365347
+SWE,Sweden,Europe & Central Asia,High income,Stockholm,2022,2022-01-01 00:00:00+00:00,10486941.0,10.486941,54836.8907235124
+SWZ,Eswatini,Sub-Saharan Africa ,Lower middle income,Mbabane,2020,2020-01-01 00:00:00+00:00,1192729.0,1.192729,3466.56936278145
+SWZ,Eswatini,Sub-Saharan Africa ,Lower middle income,Mbabane,2021,2021-01-01 00:00:00+00:00,1206593.0,1.206593,3984.00229174306
+SWZ,Eswatini,Sub-Saharan Africa ,Lower middle income,Mbabane,2022,2022-01-01 00:00:00+00:00,1218917.0,1.218917,3894.1620089869
+SXM,Sint Maarten (Dutch part),Latin America & Caribbean ,High income,Philipsburg,2020,2020-01-01 00:00:00+00:00,41008.0,0.041008,30150.8998380477
+SXM,Sint Maarten (Dutch part),Latin America & Caribbean ,High income,Philipsburg,2021,2021-01-01 00:00:00+00:00,41571.0,0.041571,32548.4366854902
+SXM,Sint Maarten (Dutch part),Latin America & Caribbean ,High income,Philipsburg,2022,2022-01-01 00:00:00+00:00,42139.0,0.042139,37793.1283815826
+SYC,Seychelles,Sub-Saharan Africa ,High income,Victoria,2020,2020-01-01 00:00:00+00:00,98462.0,0.098462,14041.4754074575
+SYC,Seychelles,Sub-Saharan Africa ,High income,Victoria,2021,2021-01-01 00:00:00+00:00,99258.0,0.099258,14982.9111487767
+SYC,Seychelles,Sub-Saharan Africa ,High income,Victoria,2022,2022-01-01 00:00:00+00:00,119878.0,0.119878,16682.6990711785
+SYR,Syrian Arab Republic,"Middle East, North Africa, Afghanistan & Pakistan",Low income,Damascus,2020,2020-01-01 00:00:00+00:00,21049429.0,21.049429,593.911771822527
+SYR,Syrian Arab Republic,"Middle East, North Africa, Afghanistan & Pakistan",Low income,Damascus,2021,2021-01-01 00:00:00+00:00,21628839.0,21.628839,688.566109726934
+SYR,Syrian Arab Republic,"Middle East, North Africa, Afghanistan & Pakistan",Low income,Damascus,2022,2022-01-01 00:00:00+00:00,22462173.0,22.462173,1056.78264718197
+TCA,Turks and Caicos Islands,Latin America & Caribbean ,High income,Cockburn Town,2020,2020-01-01 00:00:00+00:00,44386.0,0.044386,20690.9160546118
+TCA,Turks and Caicos Islands,Latin America & Caribbean ,High income,Cockburn Town,2021,2021-01-01 00:00:00+00:00,45243.0,0.045243,27329.2885087196
+TCA,Turks and Caicos Islands,Latin America & Caribbean ,High income,Cockburn Town,2022,2022-01-01 00:00:00+00:00,45847.0,0.045847,31280.5418020808
+TCD,Chad,Sub-Saharan Africa ,Low income,N'Djamena,2020,2020-01-01 00:00:00+00:00,17224679.0,17.224679,866.947814890409
+TCD,Chad,Sub-Saharan Africa ,Low income,N'Djamena,2021,2021-01-01 00:00:00+00:00,17828273.0,17.828273,946.358500208374
+TCD,Chad,Sub-Saharan Africa ,Low income,N'Djamena,2022,2022-01-01 00:00:00+00:00,18455316.0,18.455316,966.036468278568
+TGO,Togo,Sub-Saharan Africa ,Lower middle income,Lome,2020,2020-01-01 00:00:00+00:00,7788054.0,7.788054,961.219781201934
+TGO,Togo,Sub-Saharan Africa ,Lower middle income,Lome,2021,2021-01-01 00:00:00+00:00,7936176.0,7.936176,1076.29520076949
+TGO,Togo,Sub-Saharan Africa ,Lower middle income,Lome,2022,2022-01-01 00:00:00+00:00,8068616.0,8.068616,1071.61539220759
+THA,Thailand,East Asia & Pacific,Upper middle income,Bangkok,2020,2020-01-01 00:00:00+00:00,71641484.0,71.641484,6983.03412836245
+THA,Thailand,East Asia & Pacific,Upper middle income,Bangkok,2021,2021-01-01 00:00:00+00:00,71727332.0,71.727332,7055.18760721422
+THA,Thailand,East Asia & Pacific,Upper middle income,Bangkok,2022,2022-01-01 00:00:00+00:00,71735329.0,71.735329,6910.00995211206
+TJK,Tajikistan,Europe & Central Asia,Lower middle income,Dushanbe,2020,2020-01-01 00:00:00+00:00,9749310.0,9.74931,834.311715460625
+TJK,Tajikistan,Europe & Central Asia,Lower middle income,Dushanbe,2021,2021-01-01 00:00:00+00:00,9966908.0,9.966908,896.748053372182
+TJK,Tajikistan,Europe & Central Asia,Lower middle income,Dushanbe,2022,2022-01-01 00:00:00+00:00,10182222.0,10.182222,1052.17949484894
+TKM,Turkmenistan,Europe & Central Asia,Upper middle income,Ashgabat,2020,2020-01-01 00:00:00+00:00,6949912.0,6.949912,3935.37749365223
+TKM,Turkmenistan,Europe & Central Asia,Upper middle income,Ashgabat,2021,2021-01-01 00:00:00+00:00,7092043.0,7.092043,3713.20113171765
+TKM,Turkmenistan,Europe & Central Asia,Upper middle income,Ashgabat,2022,2022-01-01 00:00:00+00:00,7230193.0,7.230193,5198.18947409551
+TLS,Timor-Leste,East Asia & Pacific,Lower middle income,Dili,2020,2020-01-01 00:00:00+00:00,1326053.0,1.326053,1630.86935439232
+TLS,Timor-Leste,East Asia & Pacific,Lower middle income,Dili,2021,2021-01-01 00:00:00+00:00,1350139.0,1.350139,2684.92673717299
+TLS,Timor-Leste,East Asia & Pacific,Lower middle income,Dili,2022,2022-01-01 00:00:00+00:00,1369295.0,1.369295,2343.24955542816
+TON,Tonga,East Asia & Pacific,Upper middle income,Nuku'alofa,2020,2020-01-01 00:00:00+00:00,105704.0,0.105704,4792.35872413906
+TON,Tonga,East Asia & Pacific,Upper middle income,Nuku'alofa,2021,2021-01-01 00:00:00+00:00,105490.0,0.10549,4922.8015864044
+TON,Tonga,East Asia & Pacific,Upper middle income,Nuku'alofa,2022,2022-01-01 00:00:00+00:00,105042.0,0.105042,5298.01942454298
+TTO,Trinidad and Tobago,Latin America & Caribbean ,High income,Port of Spain,2020,2020-01-01 00:00:00+00:00,1366725.0,1.366725,15283.6270531554
+TTO,Trinidad and Tobago,Latin America & Caribbean ,High income,Port of Spain,2021,2021-01-01 00:00:00+00:00,1367558.0,1.367558,17712.5674104655
+TTO,Trinidad and Tobago,Latin America & Caribbean ,High income,Port of Spain,2022,2022-01-01 00:00:00+00:00,1365805.0,1.365805,20750.5202434652
+TUN,Tunisia,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Tunis,2020,2020-01-01 00:00:00+00:00,11974057.0,11.974057,3548.65363663803
+TUN,Tunisia,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Tunis,2021,2021-01-01 00:00:00+00:00,12048622.0,12.048622,3906.93926319391
+TUN,Tunisia,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,Tunis,2022,2022-01-01 00:00:00+00:00,12119334.0,12.119334,3707.29283414381
+TUR,Turkiye,Europe & Central Asia,Upper middle income,Ankara,2020,2020-01-01 00:00:00+00:00,83384680.0,83.38468,8798.11791709313
+TUR,Turkiye,Europe & Central Asia,Upper middle income,Ankara,2021,2021-01-01 00:00:00+00:00,84147318.0,84.147318,9981.76398411336
+TUR,Turkiye,Europe & Central Asia,Upper middle income,Ankara,2022,2022-01-01 00:00:00+00:00,84979913.0,84.979913,10897.8397861365
+TUV,Tuvalu,East Asia & Pacific,Upper middle income,Funafuti,2020,2020-01-01 00:00:00+00:00,10399.0,0.010399,5029.57159284173
+TUV,Tuvalu,East Asia & Pacific,Upper middle income,Funafuti,2021,2021-01-01 00:00:00+00:00,10194.0,0.010194,6042.51983141155
+TUV,Tuvalu,East Asia & Pacific,Upper middle income,Funafuti,2022,2022-01-01 00:00:00+00:00,9992.0,0.009992,5414.74642912412
+TZA,Tanzania,Sub-Saharan Africa ,Lower middle income,Dodoma,2020,2020-01-01 00:00:00+00:00,60972798.0,60.972798,1117.41528320313
+TZA,Tanzania,Sub-Saharan Africa ,Lower middle income,Dodoma,2021,2021-01-01 00:00:00+00:00,62830412.0,62.830412,1159.85656738281
+TZA,Tanzania,Sub-Saharan Africa ,Lower middle income,Dodoma,2022,2022-01-01 00:00:00+00:00,64711821.0,64.711821,1207.52062988281
+UGA,Uganda,Sub-Saharan Africa ,Low income,Kampala,2020,2020-01-01 00:00:00+00:00,44457152.0,44.457152,845.766463890124
+UGA,Uganda,Sub-Saharan Africa ,Low income,Kampala,2021,2021-01-01 00:00:00+00:00,45910930.0,45.91093,882.791717542504
+UGA,Uganda,Sub-Saharan Africa ,Low income,Kampala,2022,2022-01-01 00:00:00+00:00,47312719.0,47.312719,963.067314117178
+UKR,Ukraine,Europe & Central Asia,Upper middle income,Kiev,2020,2020-01-01 00:00:00+00:00,44680014.0,44.680014,3709.76928710938
+UKR,Ukraine,Europe & Central Asia,Upper middle income,Kiev,2021,2021-01-01 00:00:00+00:00,44298640.0,44.29864,4775.94580078125
+UKR,Ukraine,Europe & Central Asia,Upper middle income,Kiev,2022,2022-01-01 00:00:00+00:00,41048766.0,41.048766,4199.6708984375
+URY,Uruguay,Latin America & Caribbean ,High income,Montevideo,2020,2020-01-01 00:00:00+00:00,3398968.0,3.398968,15757.5341990356
+URY,Uruguay,Latin America & Caribbean ,High income,Montevideo,2021,2021-01-01 00:00:00+00:00,3396695.0,3.396695,17881.8119616753
+URY,Uruguay,Latin America & Caribbean ,High income,Montevideo,2022,2022-01-01 00:00:00+00:00,3390913.0,3.390913,21009.2883798725
+USA,United States,North America,High income,Washington,2020,2020-01-01 00:00:00+00:00,331578104.0,331.578104,64465.2971415748
+USA,United States,North America,High income,Washington,2021,2021-01-01 00:00:00+00:00,332100166.0,332.100166,71441.2319805947
+USA,United States,North America,High income,Washington,2022,2022-01-01 00:00:00+00:00,333996304.0,333.996304,78008.6895811877
+UZB,Uzbekistan,Europe & Central Asia,Lower middle income,Tashkent,2020,2020-01-01 00:00:00+00:00,33586372.0,33.586372,2087.96374711792
+UZB,Uzbekistan,Europe & Central Asia,Lower middle income,Tashkent,2021,2021-01-01 00:00:00+00:00,34243696.0,34.243696,2370.36480555669
+UZB,Uzbekistan,Europe & Central Asia,Lower middle income,Tashkent,2022,2022-01-01 00:00:00+00:00,34938955.0,34.938955,2698.60262953369
+VCT,St. Vincent and the Grenadines,Latin America & Caribbean ,Upper middle income,Kingstown,2020,2020-01-01 00:00:00+00:00,103526.0,0.103526,8351.20324040982
+VCT,St. Vincent and the Grenadines,Latin America & Caribbean ,Upper middle income,Kingstown,2021,2021-01-01 00:00:00+00:00,102841.0,0.102841,8641.27904024443
+VCT,St. Vincent and the Grenadines,Latin America & Caribbean ,Upper middle income,Kingstown,2022,2022-01-01 00:00:00+00:00,102046.0,0.102046,9693.55867833025
+VEN,"Venezuela, RB",Latin America & Caribbean ,Lower middle income,Caracas,2020,2020-01-01 00:00:00+00:00,28444077.0,28.444077,1506.04169391285
+VEN,"Venezuela, RB",Latin America & Caribbean ,Lower middle income,Caracas,2021,2021-01-01 00:00:00+00:00,28237826.0,28.237826,2004.93572921136
+VEN,"Venezuela, RB",Latin America & Caribbean ,Lower middle income,Caracas,2022,2022-01-01 00:00:00+00:00,28213017.0,28.213017,3155.04190923584
+VGB,British Virgin Islands,Latin America & Caribbean ,High income,Road Town,2020,2020-01-01 00:00:00+00:00,37135.0,0.037135,
+VGB,British Virgin Islands,Latin America & Caribbean ,High income,Road Town,2021,2021-01-01 00:00:00+00:00,37809.0,0.037809,
+VGB,British Virgin Islands,Latin America & Caribbean ,High income,Road Town,2022,2022-01-01 00:00:00+00:00,38319.0,0.038319,
+VIR,Virgin Islands (U.S.),Latin America & Caribbean ,High income,Charlotte Amalie,2020,2020-01-01 00:00:00+00:00,106290.0,0.10629,39787.3741650202
+VIR,Virgin Islands (U.S.),Latin America & Caribbean ,High income,Charlotte Amalie,2021,2021-01-01 00:00:00+00:00,105870.0,0.10587,42571.0777368471
+VIR,Virgin Islands (U.S.),Latin America & Caribbean ,High income,Charlotte Amalie,2022,2022-01-01 00:00:00+00:00,105413.0,0.105413,44320.909185774
+VNM,Viet Nam,East Asia & Pacific,Upper middle income,Hanoi,2020,2020-01-01 00:00:00+00:00,98079191.0,98.079191,3534.03953482647
+VNM,Viet Nam,East Asia & Pacific,Upper middle income,Hanoi,2021,2021-01-01 00:00:00+00:00,98935098.0,98.935098,3704.1935590038
+VNM,Viet Nam,East Asia & Pacific,Upper middle income,Hanoi,2022,2022-01-01 00:00:00+00:00,99680655.0,99.680655,4147.69777213621
+VUT,Vanuatu,East Asia & Pacific,Lower middle income,Port Vila,2020,2020-01-01 00:00:00+00:00,298858.0,0.298858,3404.30359167624
+VUT,Vanuatu,East Asia & Pacific,Lower middle income,Port Vila,2021,2021-01-01 00:00:00+00:00,305868.0,0.305868,3576.13770954363
+VUT,Vanuatu,East Asia & Pacific,Lower middle income,Port Vila,2022,2022-01-01 00:00:00+00:00,313046.0,0.313046,3679.53524327491
+WSM,Samoa,East Asia & Pacific,Upper middle income,Apia,2020,2020-01-01 00:00:00+00:00,211944.0,0.211944,4099.59660548583
+WSM,Samoa,East Asia & Pacific,Upper middle income,Apia,2021,2021-01-01 00:00:00+00:00,213779.0,0.213779,4021.55934894283
+WSM,Samoa,East Asia & Pacific,Upper middle income,Apia,2022,2022-01-01 00:00:00+00:00,215261.0,0.215261,4132.44717734444
+XKX,Kosovo,Europe & Central Asia,Upper middle income,Pristina,2020,2020-01-01 00:00:00+00:00,1790151.0,1.790151,4320.58382547288
+XKX,Kosovo,Europe & Central Asia,Upper middle income,Pristina,2021,2021-01-01 00:00:00+00:00,1786079.0,1.786079,5269.69946181439
+XKX,Kosovo,Europe & Central Asia,Upper middle income,Pristina,2022,2022-01-01 00:00:00+00:00,1768096.0,1.768096,5298.1473871027
+YEM,"Yemen, Rep.","Middle East, North Africa, Afghanistan & Pakistan",Low income,Sanaa,2020,2020-01-01 00:00:00+00:00,36134863.0,36.134863,
+YEM,"Yemen, Rep.","Middle East, North Africa, Afghanistan & Pakistan",Low income,Sanaa,2021,2021-01-01 00:00:00+00:00,37140230.0,37.14023,
+YEM,"Yemen, Rep.","Middle East, North Africa, Afghanistan & Pakistan",Low income,Sanaa,2022,2022-01-01 00:00:00+00:00,38222876.0,38.222876,
+ZAF,South Africa,Sub-Saharan Africa ,Upper middle income,Pretoria,2020,2020-01-01 00:00:00+00:00,60562381.0,60.562381,5580.60383075189
+ZAF,South Africa,Sub-Saharan Africa ,Upper middle income,Pretoria,2021,2021-01-01 00:00:00+00:00,61502603.0,61.502603,6828.75624590017
+ZAF,South Africa,Sub-Saharan Africa ,Upper middle income,Pretoria,2022,2022-01-01 00:00:00+00:00,62378410.0,62.37841,6534.24867783397
+ZMB,Zambia,Sub-Saharan Africa ,Lower middle income,Lusaka,2020,2020-01-01 00:00:00+00:00,19059395.0,19.059395,951.644316655957
+ZMB,Zambia,Sub-Saharan Africa ,Lower middle income,Lusaka,2021,2021-01-01 00:00:00+00:00,19603607.0,19.603607,1127.16077872857
+ZMB,Zambia,Sub-Saharan Africa ,Lower middle income,Lusaka,2022,2022-01-01 00:00:00+00:00,20152938.0,20.152938,1447.12310138035
+ZWE,Zimbabwe,Sub-Saharan Africa ,Lower middle income,Harare,2020,2020-01-01 00:00:00+00:00,15526888.0,15.526888,2059.63704025274
+ZWE,Zimbabwe,Sub-Saharan Africa ,Lower middle income,Harare,2021,2021-01-01 00:00:00+00:00,15797210.0,15.79721,2613.6167414057
+ZWE,Zimbabwe,Sub-Saharan Africa ,Lower middle income,Harare,2022,2022-01-01 00:00:00+00:00,16069056.0,16.069056,2536.40197087505

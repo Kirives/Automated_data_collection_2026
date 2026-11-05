@@ -1,0 +1,499 @@
+{
+  "id": "lab4Vshivkov6",
+  "name": "Лабораторная 4 - Динамические товары",
+  "nodes": [
+    {
+      "id": "9894c386-3dbb-4aaa-91cd-2e6db5852f83",
+      "name": "Ручной запуск",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        100
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "fd3952e9-cb48-4667-88ae-68e5686f2d54",
+      "name": "Каждый день в 09 00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        -100
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1,
+              "triggerAtHour": 9,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b382e815-54fc-48db-b3b5-81de657fdb4d",
+      "name": "Загрузить страницу с JS",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        100
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8766/render",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\"url\": \"https://www.scrapingcourse.com/button-click\", \"javascript\": true, \"wait_selector\": \".product-item\", \"clicks\": 1}",
+        "options": {
+          "timeout": 90000,
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "900a1859-48d6-4982-bc94-9f65199cae56",
+      "name": "Ответ успешный",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        100
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "44a4796f-cff5-44e6-b7e9-2c7140e67e41",
+              "leftValue": "={{ $json.statusCode }}",
+              "rightValue": 200,
+              "operator": {
+                "type": "number",
+                "operation": "equals"
+              }
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "fe7fb6b6-f432-4421-83af-281ec831a55d",
+      "name": "Извлечь поля из HTML",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        720,
+        100
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "body.html",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "names",
+              "cssSelector": "#product-grid .product-name",
+              "returnValue": "text",
+              "returnArray": true
+            },
+            {
+              "key": "prices",
+              "cssSelector": "#product-grid .product-price",
+              "returnValue": "text",
+              "returnArray": true
+            },
+            {
+              "key": "urls",
+              "cssSelector": "#product-grid .product-item a[href]",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {
+          "trimValues": true,
+          "cleanUpText": true
+        }
+      }
+    },
+    {
+      "id": "98750166-2732-4c0a-ab09-ade8bd4aa90f",
+      "name": "Собрать массив",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        960,
+        100
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9e632fe8-ea2a-4240-b204-e312558e1592",
+              "name": "records",
+              "value": "={{ $json.names.map((name, i) => ({name, price: $json.prices[i], product_url: $json.urls[i]})) }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "18185a70-56c6-42a5-ba5f-5571dcfd5c34",
+      "name": "Развернуть записи",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        960,
+        360
+      ],
+      "parameters": {
+        "fieldToSplitOut": "records",
+        "options": {}
+      }
+    },
+    {
+      "id": "808b078a-8184-4952-a5d0-35478d8ba318",
+      "name": "Преобразовать поля",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        720,
+        360
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "7bc7cbeb-332a-4398-9fde-cef64682f90c",
+              "name": "product_id",
+              "value": "={{ $json.product_url.split('/').filter(Boolean).pop() }}",
+              "type": "string"
+            },
+            {
+              "id": "3afcc244-c43f-446f-af43-06ec8fcc34c8",
+              "name": "name",
+              "value": "={{ $json.name.replace(/\\s+/g, ' ').trim() }}",
+              "type": "string"
+            },
+            {
+              "id": "1b350691-80a6-4a84-9802-89ad5c7455a3",
+              "name": "price",
+              "value": "={{ Number($json.price.replace(/[^0-9.]/g, '')) }}",
+              "type": "number"
+            },
+            {
+              "id": "cb26046f-f4c0-4f2f-9451-6013a8f4b246",
+              "name": "currency",
+              "value": "USD",
+              "type": "string"
+            },
+            {
+              "id": "bf51d1af-70c3-482a-a087-b2a14ce7c189",
+              "name": "product_url",
+              "value": "={{ $json.product_url.replace(/\\/+$/, '') }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "e645a243-be27-4eec-94cd-7592ee682698",
+      "name": "Удалить дубликаты",
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 1.1,
+      "position": [
+        480,
+        360
+      ],
+      "parameters": {
+        "compare": "selectedFields",
+        "fieldsToCompare": "product_id",
+        "options": {}
+      }
+    },
+    {
+      "id": "9a9d0d5c-5143-4f09-89b3-6371b56299ea",
+      "name": "Создать CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        360
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "e76a242f-9868-42ac-afbf-994d36fbc291",
+      "name": "Сохранить результат",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        360
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "b0901d02-efa6-472e-a9c8-93ab16749992",
+      "name": "Запись об ошибке",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        620
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "967d1df8-23fa-4caa-80c0-c9f08c8793c7",
+              "name": "timestamp",
+              "value": "={{ $now.toISO() }}",
+              "type": "string"
+            },
+            {
+              "id": "fb19313f-7552-4410-b4be-286af992eb38",
+              "name": "status",
+              "value": "={{ String($json.statusCode || 0) }}",
+              "type": "string"
+            },
+            {
+              "id": "744211d2-17e4-4f09-9a26-dfce2d526a17",
+              "name": "message",
+              "value": "={{ JSON.stringify($json.error || $json.body || $json).slice(0,500) }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "aa0a09db-2e89-4514-b780-ec1285f8b875",
+      "name": "Ошибка в CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        480,
+        620
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "error_log.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "ec7ba100-941b-4ebc-9106-776f3abcd37e",
+      "name": "Сохранить ошибку",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        620
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/error_log.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Ручной запуск": {
+      "main": [
+        [
+          {
+            "node": "Загрузить страницу с JS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Каждый день в 09 00": {
+      "main": [
+        [
+          {
+            "node": "Загрузить страницу с JS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Загрузить страницу с JS": {
+      "main": [
+        [
+          {
+            "node": "Ответ успешный",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Запись об ошибке",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ответ успешный": {
+      "main": [
+        [
+          {
+            "node": "Извлечь поля из HTML",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Запись об ошибке",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Извлечь поля из HTML": {
+      "main": [
+        [
+          {
+            "node": "Собрать массив",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Собрать массив": {
+      "main": [
+        [
+          {
+            "node": "Развернуть записи",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Развернуть записи": {
+      "main": [
+        [
+          {
+            "node": "Преобразовать поля",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Преобразовать поля": {
+      "main": [
+        [
+          {
+            "node": "Удалить дубликаты",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Удалить дубликаты": {
+      "main": [
+        [
+          {
+            "node": "Создать CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Создать CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить результат",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Запись об ошибке": {
+      "main": [
+        [
+          {
+            "node": "Ошибка в CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ошибка в CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить ошибку",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "versionId": "31a78f8b-85ef-43f5-a2ff-866064ef35d1",
+  "tags": []
+}

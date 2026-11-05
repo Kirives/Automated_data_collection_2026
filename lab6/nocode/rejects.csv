@@ -1,0 +1,5 @@
+﻿business_key,title,source,value,unit,source_url,valid,reason
+invalid:0,,books,52.15,GBP,https://books.toscrape.com/catalogue/the-black-maria_991/index.html,FALSE,"Пустое поле, неверное число или единица"
+invalid:1,The Black Maria,books,-1,GBP,https://books.toscrape.com/catalogue/the-black-maria_991/index.html,FALSE,"Пустое поле, неверное число или единица"
+invalid:2,The Black Maria,books,abc,GBP,https://books.toscrape.com/catalogue/the-black-maria_991/index.html,FALSE,"Пустое поле, неверное число или единица"
+invalid:3,The Black Maria,books,52.15,XXX,https://books.toscrape.com/catalogue/the-black-maria_991/index.html,FALSE,"Пустое поле, неверное число или единица"

@@ -1,0 +1,356 @@
+{
+  "id": "lab6Vshivkov6",
+  "name": "Лабораторная 6 - Очистка и хранение",
+  "nodes": [
+    {
+      "id": "2dd9817a-56fa-4034-97c2-051db84c00c8",
+      "name": "Ручной запуск",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "4991e051-03db-4083-84cf-69b15ec6cba7",
+      "name": "Каждый день в 09 00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        180
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1,
+              "triggerAtHour": 9,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "9517a749-c045-47e4-afb5-d7b2f58fca17",
+      "name": "Читать исходную таблицу",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "fileSelector": "/files/input.csv",
+        "options": {}
+      }
+    },
+    {
+      "id": "3f221b79-02e4-43b2-902a-1f46dcfa2d77",
+      "name": "Разобрать CSV",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {}
+      }
+    },
+    {
+      "id": "768a5a80-470d-4f4f-991e-7b68f30fe447",
+      "name": "Нормализовать поля",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const norm = v => String(v ?? '').normalize('NFKC').replace(/[\\u200B-\\u200D\\uFEFF]/g,'').replace(/\\s+/g,' ').trim();\nreturn $input.all().map(item => {\n const r=item.json; const value=norm(r.value).replace(/[£, ]/g,'');\n const match=value.match(/^(\\d+)(?:\\.(\\d{1,2}))?$/);\n const minor=match ? BigInt(match[1])*100n+BigInt((match[2]||'').padEnd(2,'0')) : 0n;\n const title=norm(r.title), key=norm(r.business_key), source=norm(r.source).toLowerCase(), unit=norm(r.unit);\n const valid=Boolean(key && title.length>=2 && minor>0n && minor<=200000000000n && ['GBP','persons'].includes(unit));\n return {json:{business_key:key,title,source,value:match?match[1]+'.'+(match[2]||'').padEnd(2,'0'):value,\n  unit,source_url:norm(r.source_url),valid,reason:valid?'':'Пустое поле, неверное число или единица'}};\n});"
+      }
+    },
+    {
+      "id": "9c91d3d6-1eb7-4fbf-b83f-d905b1c8dedb",
+      "name": "Удалить дубликаты",
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 1.1,
+      "position": [
+        880,
+        0
+      ],
+      "parameters": {
+        "compare": "selectedFields",
+        "fieldsToCompare": "business_key",
+        "options": {}
+      }
+    },
+    {
+      "id": "abb6646d-7f0f-4361-b559-9e278205e51a",
+      "name": "Проверить строку",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1100,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "b80bab97-4461-4a62-a417-0f825249de06",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "e29bd5ef-4e9d-4685-a46c-4273e4d35f51",
+      "name": "Корректные строки",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1320,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "f74a2e25-458a-469e-b3e4-45205763e198",
+      "name": "Отбракованные строки",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1320,
+        280
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "b7dbc98d-fc26-44ac-b85a-5c77c28b39c1",
+      "name": "Результат в CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1540,
+        0
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "3910be7e-41a2-46a0-96cf-e71a7bd8ad3a",
+      "name": "Сохранить Результат",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1770,
+        0
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "161586a9-ab3c-40f8-875d-475e734ee6ab",
+      "name": "Отбраковку в CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1540,
+        280
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "rejects.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "a40619ae-d072-47dd-8a2c-052267e191d5",
+      "name": "Сохранить Отбраковку",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1770,
+        280
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/rejects.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Корректные строки": {
+      "main": [
+        [
+          {
+            "node": "Результат в CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Результат в CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить Результат",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Отбракованные строки": {
+      "main": [
+        [
+          {
+            "node": "Отбраковку в CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Отбраковку в CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить Отбраковку",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ручной запуск": {
+      "main": [
+        [
+          {
+            "node": "Читать исходную таблицу",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Каждый день в 09 00": {
+      "main": [
+        [
+          {
+            "node": "Читать исходную таблицу",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Читать исходную таблицу": {
+      "main": [
+        [
+          {
+            "node": "Разобрать CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Разобрать CSV": {
+      "main": [
+        [
+          {
+            "node": "Нормализовать поля",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Нормализовать поля": {
+      "main": [
+        [
+          {
+            "node": "Удалить дубликаты",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Удалить дубликаты": {
+      "main": [
+        [
+          {
+            "node": "Проверить строку",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Проверить строку": {
+      "main": [
+        [
+          {
+            "node": "Корректные строки",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Отбракованные строки",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "versionId": "68b1c2e7-b1cf-411d-9337-109a3e8146dc",
+  "tags": []
+}

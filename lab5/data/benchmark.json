@@ -1,0 +1,9 @@
+{
+  "run_id": "20261026_000909_benchmark40",
+  "records": 40,
+  "seconds": 26.912341,
+  "network_requests": 43,
+  "content_requests": 42,
+  "body_bytes": 840684,
+  "database": "data/benchmark_20261026_000909.db"
+}

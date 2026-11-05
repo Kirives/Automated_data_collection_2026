@@ -1,0 +1,465 @@
+{
+  "id": "lab3Vshivkov6",
+  "name": "Лабораторная 3 - Население стран",
+  "nodes": [
+    {
+      "id": "df62d825-cf00-48b6-949f-a4439b566e57",
+      "name": "Ручной запуск",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        160
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "2d7135aa-588c-4b9e-b0f9-fc41c65dd338",
+      "name": "Ежедневно в 09 00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        360
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1,
+              "triggerAtHour": 9,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "f9f06a2c-ab80-45a9-9138-2de4ef468ac0",
+      "name": "Получить страницы API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        160
+      ],
+      "parameters": {
+        "url": "https://api.worldbank.org/v2/country/RUS;USA;CHN;IND;BRA;DEU;FRA;JPN;CAN;AUS/indicator/SP.POP.TOTL",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "format",
+              "value": "json"
+            },
+            {
+              "name": "date",
+              "value": "2020:2022"
+            },
+            {
+              "name": "per_page",
+              "value": "10"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "University-Lab3-n8n/1.0"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 45000,
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true,
+              "responseFormat": "json"
+            }
+          },
+          "pagination": {
+            "pagination": {
+              "paginationMode": "updateAParameterInEachRequest",
+              "parameters": {
+                "parameters": [
+                  {
+                    "type": "qs",
+                    "name": "page",
+                    "value": "={{ $pageCount + 1 }}"
+                  }
+                ]
+              },
+              "paginationCompleteWhen": "other",
+              "completeExpression": "={{ $response.statusCode !== 200 || !$response.body[1] || $response.body[1].length === 0 || Number($response.body[0].page) >= Number($response.body[0].pages) }}",
+              "limitPagesFetched": true,
+              "maxRequests": 10,
+              "requestInterval": 600
+            }
+          }
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "45ed8029-de3c-4d7e-83d8-1b3b455104c8",
+      "name": "Ответ успешный",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        160
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c5e073f8-e4ad-4844-8159-631376b40470",
+              "leftValue": "={{ $json.statusCode }}",
+              "rightValue": 200,
+              "operator": {
+                "type": "number",
+                "operation": "equals"
+              }
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "988e6dcb-040f-4503-9969-c54caa192a4f",
+      "name": "Массив записей",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        720,
+        60
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d4c84ebe-abf5-4bc3-bc2d-2e273878ca3d",
+              "name": "records",
+              "value": "={{ $json.body[1] }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "a4c656f9-558a-49a4-9c96-7b0300401588",
+      "name": "Развернуть записи",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        960,
+        60
+      ],
+      "parameters": {
+        "fieldToSplitOut": "records",
+        "options": {}
+      }
+    },
+    {
+      "id": "f8448aa3-56ff-4808-adb4-eeade1667c5b",
+      "name": "Преобразовать поля",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1200,
+        60
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ff994ffe-eab3-44a9-b649-3623caedd5e7",
+              "name": "country_code",
+              "value": "={{ $json.countryiso3code }}",
+              "type": "string"
+            },
+            {
+              "id": "2784b139-490b-408b-84da-aea953c945fd",
+              "name": "country",
+              "value": "={{ $json.country.value }}",
+              "type": "string"
+            },
+            {
+              "id": "387a4dde-5c47-4c80-ab64-84b9751720ae",
+              "name": "year",
+              "value": "={{ Number($json.date) }}",
+              "type": "number"
+            },
+            {
+              "id": "83d8ba3f-900c-44e6-85c8-83cabf77ffba",
+              "name": "population",
+              "value": "={{ Number($json.value) }}",
+              "type": "number"
+            },
+            {
+              "id": "65464ab8-e946-47ba-8228-abf6f296de1c",
+              "name": "population_million",
+              "value": "={{ Number($json.value) / 1000000 }}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "512aa1c1-9b89-4b5c-a9bb-075f01abc015",
+      "name": "Создать CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1440,
+        60
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "b873dc14-ff67-498a-8b57-b7be7cd8cabd",
+      "name": "Сохранить результат",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1680,
+        60
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "9b27e1b1-0d6e-4280-90fd-b99b4afdea50",
+      "name": "Запись об ошибке",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        720,
+        420
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5c57bbdd-2b85-47c6-a4f6-772a5069a474",
+              "name": "timestamp",
+              "value": "={{ $now.toISO() }}",
+              "type": "string"
+            },
+            {
+              "id": "d6ad0fb0-356a-40c0-bec6-3fed582ef9d4",
+              "name": "status",
+              "value": "={{ String($json.statusCode || 0) }}",
+              "type": "string"
+            },
+            {
+              "id": "5576fdd9-24e4-4680-a234-550100f05d2c",
+              "name": "message",
+              "value": "={{ JSON.stringify($json.error || $json.body || $json).slice(0, 500) }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "b5b99eca-642c-4f1e-8bdd-5252af996bb0",
+      "name": "Ошибка в CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        960,
+        420
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "error_log.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "85b33a02-efc9-452b-8db7-275299f57aec",
+      "name": "Сохранить ошибку",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1200,
+        420
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/error_log.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Ручной запуск": {
+      "main": [
+        [
+          {
+            "node": "Получить страницы API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ежедневно в 09 00": {
+      "main": [
+        [
+          {
+            "node": "Получить страницы API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Получить страницы API": {
+      "main": [
+        [
+          {
+            "node": "Ответ успешный",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Запись об ошибке",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ответ успешный": {
+      "main": [
+        [
+          {
+            "node": "Массив записей",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Запись об ошибке",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Массив записей": {
+      "main": [
+        [
+          {
+            "node": "Развернуть записи",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Развернуть записи": {
+      "main": [
+        [
+          {
+            "node": "Преобразовать поля",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Преобразовать поля": {
+      "main": [
+        [
+          {
+            "node": "Создать CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Создать CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить результат",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Запись об ошибке": {
+      "main": [
+        [
+          {
+            "node": "Ошибка в CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ошибка в CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить ошибку",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "versionId": "6fe22e29-cd7e-4130-a5b9-c6207cb99064",
+  "tags": []
+}

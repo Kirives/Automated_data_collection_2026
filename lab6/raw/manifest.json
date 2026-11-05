@@ -1,0 +1,14 @@
+{
+  "sources": {
+    "worldbank": 1085,
+    "books": 20
+  },
+  "synthetic": 70,
+  "synthetic_fraction": 0.059574468085106386,
+  "description": "70 тестовых копий с ошибками и повторами. Данные источников не изменены.",
+  "sha256": {
+    "books.jsonl": "d350b6773947aeb56b389a390170c7c2cc21e5b9f1d84c7ad9a39cf4556ef749",
+    "quality_demo.jsonl": "e153422ef1d803d9ce5cb5108f171271f98efc6085aa340ea2ad53cc7370b427",
+    "worldbank.jsonl": "c56959d99bd9403dbdce4ed9dfb4f9bfd17158a917bee765b94cc866a9beb42f"
+  }
+}

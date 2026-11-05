@@ -1,0 +1,48 @@
+business_key,title,source,value,unit,source_url
+books:1dfe412b8ac00530,  The Black Maria  , BOOKS ,52.15,GBP,https://books.toscrape.com/catalogue/the-black-maria_991/index.html
+books:2597b5a345f45e1b,  The Dirty Little Secrets of Getting Your Dream Job  , BOOKS ,33.34,GBP,https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html
+books:3b1c02bac2a429e6,  Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)  , BOOKS ,52.29,GBP,https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html
+books:4165285e1663650f,  Sapiens: A Brief History of Humankind  , BOOKS ,54.23,GBP,https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html
+books:a18a4f574854aced,  Libertarianism for Beginners  , BOOKS ,51.33,GBP,https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html
+books:ce6396b0f23f6ecc,  Set Me Free  , BOOKS ,17.46,GBP,https://books.toscrape.com/catalogue/set-me-free_988/index.html
+books:e10e1e165dc8be4a,  The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics  , BOOKS ,22.60,GBP,https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html
+books:e72a5dfc7e9267b2,"  The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull  ", BOOKS ,17.93,GBP,https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html
+books:f77dbf2323deb740,  The Requiem Red  , BOOKS ,22.65,GBP,https://books.toscrape.com/catalogue/the-requiem-red_995/index.html
+books:feb7cc7701ecf901,  Olio  , BOOKS ,23.88,GBP,https://books.toscrape.com/catalogue/olio_984/index.html
+worldbank:ABW:SP.POP.TOTL:2020,  Aruba  , WORLDBANK ,108587.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ABW:SP.POP.TOTL:2021,  Aruba  , WORLDBANK ,107700.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ABW:SP.POP.TOTL:2022,  Aruba  , WORLDBANK ,107310.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=1&per_page=100
+worldbank:AFG:SP.POP.TOTL:2020,  Afghanistan  , WORLDBANK ,39068979.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:AFG:SP.POP.TOTL:2021,  Afghanistan  , WORLDBANK ,40000412.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:AFG:SP.POP.TOTL:2022,  Afghanistan  , WORLDBANK ,40578842.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=1&per_page=100
+worldbank:AGO:SP.POP.TOTL:2020,  Angola  , WORLDBANK ,33451132.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:AGO:SP.POP.TOTL:2021,  Angola  , WORLDBANK ,34532429.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:AGO:SP.POP.TOTL:2022,  Angola  , WORLDBANK ,35635029.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=1&per_page=100
+worldbank:ALB:SP.POP.TOTL:2020,  Albania  , WORLDBANK ,2528480.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ALB:SP.POP.TOTL:2021,  Albania  , WORLDBANK ,2489762.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ALB:SP.POP.TOTL:2022,  Albania  , WORLDBANK ,2451636.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=1&per_page=100
+worldbank:AND:SP.POP.TOTL:2020,  Andorra  , WORLDBANK ,77380.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:AND:SP.POP.TOTL:2021,  Andorra  , WORLDBANK ,78364.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:AND:SP.POP.TOTL:2022,  Andorra  , WORLDBANK ,79705.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=1&per_page=100
+worldbank:ARE:SP.POP.TOTL:2020,  United Arab Emirates  , WORLDBANK ,9401038.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=8&per_page=100
+worldbank:ARE:SP.POP.TOTL:2021,  United Arab Emirates  , WORLDBANK ,9575152.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=8&per_page=100
+worldbank:ARE:SP.POP.TOTL:2022,  United Arab Emirates  , WORLDBANK ,10074977.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=3&per_page=100
+worldbank:ARG:SP.POP.TOTL:2020,  Argentina  , WORLDBANK ,45191965.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ARG:SP.POP.TOTL:2021,  Argentina  , WORLDBANK ,45312281.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ARG:SP.POP.TOTL:2022,  Argentina  , WORLDBANK ,45407904.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=1&per_page=100
+worldbank:ARM:SP.POP.TOTL:2020,  Armenia  , WORLDBANK ,2961500.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ARM:SP.POP.TOTL:2021,  Armenia  , WORLDBANK ,2962300.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ARM:SP.POP.TOTL:2022,  Armenia  , WORLDBANK ,2969200.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=1&per_page=100
+worldbank:ASM:SP.POP.TOTL:2020,  American Samoa  , WORLDBANK ,49761.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ASM:SP.POP.TOTL:2021,  American Samoa  , WORLDBANK ,49225.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ASM:SP.POP.TOTL:2022,  American Samoa  , WORLDBANK ,48342.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=1&per_page=100
+worldbank:ATG:SP.POP.TOTL:2020,  Antigua and Barbuda  , WORLDBANK ,91846.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ATG:SP.POP.TOTL:2021,  Antigua and Barbuda  , WORLDBANK ,92349.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2022&format=json&page=2&per_page=100
+worldbank:ATG:SP.POP.TOTL:2022,  Antigua and Barbuda  , WORLDBANK ,92840.00,persons,https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022%3A2022&format=json&page=1&per_page=100
+books:1dfe412b8ac00530,  The Black Maria  , BOOKS ,52.15,GBP,https://books.toscrape.com/catalogue/the-black-maria_991/index.html
+books:2597b5a345f45e1b,  The Dirty Little Secrets of Getting Your Dream Job  , BOOKS ,33.34,GBP,https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html
+books:3b1c02bac2a429e6,  Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)  , BOOKS ,52.29,GBP,https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html
+invalid:0,, BOOKS ,52.15,GBP,https://books.toscrape.com/catalogue/the-black-maria_991/index.html
+invalid:1,  The Black Maria  , BOOKS ,-1,GBP,https://books.toscrape.com/catalogue/the-black-maria_991/index.html
+invalid:2,  The Black Maria  , BOOKS ,abc,GBP,https://books.toscrape.com/catalogue/the-black-maria_991/index.html
+invalid:3,  The Black Maria  , BOOKS ,52.15,XXX,https://books.toscrape.com/catalogue/the-black-maria_991/index.html
