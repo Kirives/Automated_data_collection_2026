@@ -1,0 +1,63 @@
+[
+  {
+    "scenario": "/fault/429-number",
+    "attempts": 2,
+    "statuses": [
+      429,
+      200
+    ],
+    "delay_sources": [
+      "Retry-After",
+      "none"
+    ],
+    "final_status": 200
+  },
+  {
+    "scenario": "/fault/429-date",
+    "attempts": 2,
+    "statuses": [
+      429,
+      200
+    ],
+    "delay_sources": [
+      "Retry-After",
+      "none"
+    ],
+    "final_status": 200
+  },
+  {
+    "scenario": "/fault/429-plain",
+    "attempts": 2,
+    "statuses": [
+      429,
+      200
+    ],
+    "delay_sources": [
+      "backoff",
+      "none"
+    ],
+    "final_status": 200
+  },
+  {
+    "scenario": "/status/404",
+    "attempts": 1,
+    "statuses": [
+      404
+    ],
+    "delay_sources": [
+      "none"
+    ],
+    "final_status": 404
+  },
+  {
+    "scenario": "/status/401",
+    "attempts": 1,
+    "statuses": [
+      401
+    ],
+    "delay_sources": [
+      "none"
+    ],
+    "final_status": 401
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "key": "books:f77dbf2323deb740",
+    "title": "The Requiem Red",
+    "value": "22.65",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-requiem-red_995/index.html"
+  },
+  {
+    "key": "books:0312262ecafa5a40",
+    "title": "Starving Hearts (Triangular Trade Trilogy, #1)",
+    "value": "13.99",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html"
+  },
+  {
+    "key": "books:e00eb4fd7b871a48",
+    "title": "Sharp Objects",
+    "value": "47.82",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/sharp-objects_997/index.html"
+  },
+  {
+    "key": "books:a18a4f574854aced",
+    "title": "Libertarianism for Beginners",
+    "value": "51.33",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html"
+  },
+  {
+    "key": "books:feb7cc7701ecf901",
+    "title": "Olio",
+    "value": "23.88",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/olio_984/index.html"
+  },
+  {
+    "key": "books:e30f54cea9b38190",
+    "title": "Mesaerion: The Best Science Fiction Stories 1800-1849",
+    "value": "37.59",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html"
+  },
+  {
+    "key": "books:deda3e61b9514b83",
+    "title": "Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",
+    "value": "57.25",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html"
+  },
+  {
+    "key": "books:2597b5a345f45e1b",
+    "title": "The Dirty Little Secrets of Getting Your Dream Job",
+    "value": "33.34",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html"
+  },
+  {
+    "key": "books:e10e1e165dc8be4a",
+    "title": "The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics",
+    "value": "22.60",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html"
+  },
+  {
+    "key": "books:a22124811bfa8350",
+    "title": "It's Only the Himalayas",
+    "value": "45.17",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html"
+  },
+  {
+    "key": "books:a34ba96d4081e6a4",
+    "title": "Rip it Up and Start Again",
+    "value": "35.02",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html"
+  },
+  {
+    "key": "books:4165285e1663650f",
+    "title": "Sapiens: A Brief History of Humankind",
+    "value": "54.23",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html"
+  },
+  {
+    "key": "books:e72a5dfc7e9267b2",
+    "title": "The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",
+    "value": "17.93",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html"
+  },
+  {
+    "key": "books:90fa61229261140a",
+    "title": "Tipping the Velvet",
+    "value": "53.74",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+  },
+  {
+    "key": "books:a897fe39b1053632",
+    "title": "A Light in the Attic",
+    "value": "51.77",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+  },
+  {
+    "key": "books:1dfe412b8ac00530",
+    "title": "The Black Maria",
+    "value": "52.15",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html"
+  },
+  {
+    "key": "books:ce6396b0f23f6ecc",
+    "title": "Set Me Free",
+    "value": "17.46",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/set-me-free_988/index.html"
+  },
+  {
+    "key": "books:6957f44c3847a760",
+    "title": "Soumission",
+    "value": "50.10",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/soumission_998/index.html"
+  },
+  {
+    "key": "books:30a7f60cd76ca58c",
+    "title": "Shakespeare's Sonnets",
+    "value": "20.66",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html"
+  },
+  {
+    "key": "books:3b1c02bac2a429e6",
+    "title": "Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)",
+    "value": "52.29",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html"
+  },
+  {
+    "key": "products:4-zip-light-jacket",
+    "title": "Olivia 1/4 Zip Light Jacket",
+    "value": "77.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/olivia-1/4-zip-light-jacket"
+  },
+  {
+    "key": "products:abominable-hoodie",
+    "title": "Abominable Hoodie",
+    "value": "69.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/abominable-hoodie"
+  },
+  {
+    "key": "products:adrienne-trek-jacket",
+    "title": "Adrienne Trek Jacket",
+    "value": "57.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/adrienne-trek-jacket"
+  },
+  {
+    "key": "products:aeon-capri",
+    "title": "Aeon Capri",
+    "value": "48.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/aeon-capri"
+  },
+  {
+    "key": "products:aero-daily-fitness-tee",
+    "title": "Aero Daily Fitness Tee",
+    "value": "24.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/aero-daily-fitness-tee"
+  },
+  {
+    "key": "products:aether-gym-pant",
+    "title": "Aether Gym Pant",
+    "value": "74.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/aether-gym-pant"
+  },
+  {
+    "key": "products:ajax-full-zip-sweatshirt",
+    "title": "Ajax Full-Zip Sweatshirt",
+    "value": "69.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/ajax-full-zip-sweatshirt"
+  },
+  {
+    "key": "products:ana-running-short",
+    "title": "Ana Running Short",
+    "value": "40.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/ana-running-short"
+  },
+  {
+    "key": "products:angel-light-running-short",
+    "title": "Angel Light Running Short",
+    "value": "42.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/angel-light-running-short"
+  },
+  {
+    "key": "products:antonia-racer-tank",
+    "title": "Antonia Racer Tank",
+    "value": "34.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/antonia-racer-tank"
+  },
+  {
+    "key": "products:apollo-running-short",
+    "title": "Apollo Running Short",
+    "value": "32.5",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/apollo-running-short"
+  },
+  {
+    "key": "products:arcadio-gym-short",
+    "title": "Arcadio Gym Short",
+    "value": "20.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/arcadio-gym-short"
+  },
+  {
+    "key": "products:argus-all-weather-tank",
+    "title": "Argus All-Weather Tank",
+    "value": "22.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/argus-all-weather-tank"
+  },
+  {
+    "key": "products:ariel-roll-sleeve-sweatshirt",
+    "title": "Ariel Roll Sleeve Sweatshirt",
+    "value": "39.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/ariel-roll-sleeve-sweatshirt"
+  },
+  {
+    "key": "products:artemis-running-short",
+    "title": "Artemis Running Short",
+    "value": "45.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/artemis-running-short"
+  },
+  {
+    "key": "products:atlas-fitness-tank",
+    "title": "Atlas Fitness Tank",
+    "value": "18.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/atlas-fitness-tank"
+  },
+  {
+    "key": "products:atomic-endurance-running-tee-(crew-neck)",
+    "title": "Atomic Endurance Running Tee (Crew-Neck)",
+    "value": "29.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/atomic-endurance-running-tee-(crew-neck)"
+  },
+  {
+    "key": "products:atomic-endurance-running-tee-(v-neck)",
+    "title": "Atomic Endurance Running Tee (V-neck)",
+    "value": "28.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/atomic-endurance-running-tee-(v-neck)"
+  },
+  {
+    "key": "products:augusta-pullover-jacket",
+    "title": "Augusta Pullover Jacket",
+    "value": "57.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/augusta-pullover-jacket"
+  },
+  {
+    "key": "products:autumn-pullie",
+    "title": "Autumn Pullie",
+    "value": "57.0",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/autumn-pullie"
+  },
+  {
+    "key": "worldbank:ABW:2020",
+    "title": "Aruba",
+    "value": "108587.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ABW/indicator/SP.POP.TOTL?date=2020&format=json"
+  },
+  {
+    "key": "worldbank:ABW:2021",
+    "title": "Aruba",
+    "value": "107700.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ABW/indicator/SP.POP.TOTL?date=2021&format=json"
+  },
+  {
+    "key": "worldbank:ABW:2022",
+    "title": "Aruba",
+    "value": "107310.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ABW/indicator/SP.POP.TOTL?date=2022&format=json"
+  },
+  {
+    "key": "worldbank:AFG:2020",
+    "title": "Afghanistan",
+    "value": "39068979.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.POP.TOTL?date=2020&format=json"
+  },
+  {
+    "key": "worldbank:AFG:2021",
+    "title": "Afghanistan",
+    "value": "40000412.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.POP.TOTL?date=2021&format=json"
+  },
+  {
+    "key": "worldbank:AFG:2022",
+    "title": "Afghanistan",
+    "value": "40578842.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/AFG/indicator/SP.POP.TOTL?date=2022&format=json"
+  },
+  {
+    "key": "worldbank:AGO:2020",
+    "title": "Angola",
+    "value": "33451132.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/AGO/indicator/SP.POP.TOTL?date=2020&format=json"
+  },
+  {
+    "key": "worldbank:AGO:2021",
+    "title": "Angola",
+    "value": "34532429.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/AGO/indicator/SP.POP.TOTL?date=2021&format=json"
+  },
+  {
+    "key": "worldbank:AGO:2022",
+    "title": "Angola",
+    "value": "35635029.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/AGO/indicator/SP.POP.TOTL?date=2022&format=json"
+  },
+  {
+    "key": "worldbank:ALB:2020",
+    "title": "Albania",
+    "value": "2528480.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ALB/indicator/SP.POP.TOTL?date=2020&format=json"
+  },
+  {
+    "key": "worldbank:ALB:2021",
+    "title": "Albania",
+    "value": "2489762.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ALB/indicator/SP.POP.TOTL?date=2021&format=json"
+  },
+  {
+    "key": "worldbank:ALB:2022",
+    "title": "Albania",
+    "value": "2451636.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ALB/indicator/SP.POP.TOTL?date=2022&format=json"
+  },
+  {
+    "key": "worldbank:AND:2020",
+    "title": "Andorra",
+    "value": "77380.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/AND/indicator/SP.POP.TOTL?date=2020&format=json"
+  },
+  {
+    "key": "worldbank:AND:2021",
+    "title": "Andorra",
+    "value": "78364.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/AND/indicator/SP.POP.TOTL?date=2021&format=json"
+  },
+  {
+    "key": "worldbank:AND:2022",
+    "title": "Andorra",
+    "value": "79705.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/AND/indicator/SP.POP.TOTL?date=2022&format=json"
+  },
+  {
+    "key": "worldbank:ARE:2020",
+    "title": "United Arab Emirates",
+    "value": "9401038.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ARE/indicator/SP.POP.TOTL?date=2020&format=json"
+  },
+  {
+    "key": "worldbank:ARE:2021",
+    "title": "United Arab Emirates",
+    "value": "9575152.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ARE/indicator/SP.POP.TOTL?date=2021&format=json"
+  },
+  {
+    "key": "worldbank:ARE:2022",
+    "title": "United Arab Emirates",
+    "value": "10074977.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ARE/indicator/SP.POP.TOTL?date=2022&format=json"
+  },
+  {
+    "key": "worldbank:ARG:2020",
+    "title": "Argentina",
+    "value": "45191965.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ARG/indicator/SP.POP.TOTL?date=2020&format=json"
+  },
+  {
+    "key": "worldbank:ARG:2021",
+    "title": "Argentina",
+    "value": "45312281.0",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/ARG/indicator/SP.POP.TOTL?date=2021&format=json"
+  }
+]

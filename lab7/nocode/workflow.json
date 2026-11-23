@@ -1,0 +1,436 @@
+{
+  "name": "Лабораторная 7 - Устойчивый сбор",
+  "nodes": [
+    {
+      "id": "b418a01d-7835-4cea-a2f1-5a48ca118e33",
+      "name": "Ручной запуск",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "86aa19da-7688-46a6-b1a2-6724aeb2813f",
+      "name": "Каждый день в 09 00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        180
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1,
+              "triggerAtHour": 9,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a6318645-84ad-4db9-b8df-9a462f8b9d7f",
+      "name": "Список страниц",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "jsCode": "return [{\"json\": {\"url\": \"http://host.docker.internal:8768/page/1?host=books.toscrape.com&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/2?host=books.toscrape.com&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/3?host=books.toscrape.com&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/4?host=books.toscrape.com&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/1?host=www.scrapingcourse.com&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/2?host=www.scrapingcourse.com&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/3?host=www.scrapingcourse.com&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/4?host=www.scrapingcourse.com&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/1?host=api.worldbank.org&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/2?host=api.worldbank.org&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/3?host=api.worldbank.org&group=n8n\"}}, {\"json\": {\"url\": \"http://host.docker.internal:8768/page/4?host=api.worldbank.org&group=n8n\"}}];"
+      }
+    },
+    {
+      "id": "d1ba6c37-5602-4eba-936f-a5fc6a992688",
+      "name": "По одной странице",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      }
+    },
+    {
+      "id": "5eec3ca9-1004-4512-bf78-c75e673bc603",
+      "name": "HTTP с повторами",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        250
+      ],
+      "parameters": {
+        "url": "={{ $json.url }}",
+        "options": {
+          "timeout": 10000,
+          "response": {
+            "response": {
+              "responseFormat": "json",
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1000,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "7db3ce92-8fc1-4c93-95f9-ff4d90b19cee",
+      "name": "Проверить результат",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        880,
+        250
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "b28fb210-7169-4e3b-beb6-9dee141fb908",
+              "leftValue": "={{ Boolean($json.statusCode === 200 && Array.isArray($json.body?.items) && $json.body.items.length >= 5) }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "94cc20f8-7dfe-48a2-a2c0-51ed4a500e4f",
+      "name": "Пауза 1 секунда",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1100,
+        250
+      ],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 1,
+        "unit": "seconds"
+      },
+      "webhookId": "d77dcec6-528d-45b7-9bf7-2ca2ba0d8f18"
+    },
+    {
+      "id": "5d410bf0-7337-47d8-9e84-4b2d4a8f9865",
+      "name": "Объединить записи",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        0
+      ],
+      "parameters": {
+        "jsCode": "return $input.all().flatMap(i => (i.json.body?.items || []).map(r => ({json:r})));"
+      }
+    },
+    {
+      "id": "de4b92a1-76f8-48ca-a54b-3e5e21d3d1c5",
+      "name": "Удалить дубликаты",
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 1.1,
+      "position": [
+        880,
+        0
+      ],
+      "parameters": {
+        "compare": "selectedFields",
+        "fieldsToCompare": "key",
+        "options": {}
+      }
+    },
+    {
+      "id": "b4abd3b6-6dbe-44f0-86ec-1139cd6467be",
+      "name": "Результат в CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1100,
+        0
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "6a35dc99-4ed2-4252-96f6-7d30976a4e08",
+      "name": "Сохранить Результат",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1330,
+        0
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "863934e5-4872-4cca-9007-608c5666b84b",
+      "name": "Описание ошибки",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        510
+      ],
+      "parameters": {
+        "jsCode": "return $input.all().map(i=>({json:{timestamp:new Date().toISOString(),message:JSON.stringify(i.json.error||i.json).slice(0,600)}}));"
+      }
+    },
+    {
+      "id": "2fe8eb94-026b-4eb0-a1dc-3a350f04314b",
+      "name": "Ошибку в CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1100,
+        510
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "error_log.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "b5f80fc5-50ef-4be2-990b-ab05f63afc9c",
+      "name": "Сохранить Ошибку",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1330,
+        510
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "/files/error_log.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "38e6f167-31bb-4a65-9877-8be8c984f2f1",
+      "name": "Уведомить о сбое",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        1560,
+        510
+      ],
+      "parameters": {
+        "errorMessage": "Сбор остановлен. Уведомление в журнале выполнения, подробности в error_log.csv."
+      }
+    }
+  ],
+  "connections": {
+    "Удалить дубликаты": {
+      "main": [
+        [
+          {
+            "node": "Результат в CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Результат в CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить Результат",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Описание ошибки": {
+      "main": [
+        [
+          {
+            "node": "Ошибку в CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ошибку в CSV": {
+      "main": [
+        [
+          {
+            "node": "Сохранить Ошибку",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ручной запуск": {
+      "main": [
+        [
+          {
+            "node": "Список страниц",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Каждый день в 09 00": {
+      "main": [
+        [
+          {
+            "node": "Список страниц",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Список страниц": {
+      "main": [
+        [
+          {
+            "node": "По одной странице",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "По одной странице": {
+      "main": [
+        [
+          {
+            "node": "Объединить записи",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP с повторами",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP с повторами": {
+      "main": [
+        [
+          {
+            "node": "Проверить результат",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Описание ошибки",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Проверить результат": {
+      "main": [
+        [
+          {
+            "node": "Пауза 1 секунда",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Описание ошибки",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Пауза 1 секунда": {
+      "main": [
+        [
+          {
+            "node": "По одной странице",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Объединить записи": {
+      "main": [
+        [
+          {
+            "node": "Удалить дубликаты",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Сохранить Ошибку": {
+      "main": [
+        [
+          {
+            "node": "Уведомить о сбое",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "tags": []
+}

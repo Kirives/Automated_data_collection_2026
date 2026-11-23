@@ -1,0 +1,80 @@
+[
+  {
+    "group": "n8n",
+    "host": "books.toscrape.com",
+    "path": "/page/1",
+    "requests": 3
+  },
+  {
+    "group": "n8n",
+    "host": "books.toscrape.com",
+    "path": "/page/2",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "books.toscrape.com",
+    "path": "/page/3",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "books.toscrape.com",
+    "path": "/page/4",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "www.scrapingcourse.com",
+    "path": "/page/1",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "www.scrapingcourse.com",
+    "path": "/page/2",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "www.scrapingcourse.com",
+    "path": "/page/3",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "www.scrapingcourse.com",
+    "path": "/page/4",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "api.worldbank.org",
+    "path": "/page/1",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "api.worldbank.org",
+    "path": "/page/2",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "api.worldbank.org",
+    "path": "/page/3",
+    "requests": 1
+  },
+  {
+    "group": "n8n",
+    "host": "api.worldbank.org",
+    "path": "/page/4",
+    "requests": 1
+  },
+  {
+    "group": "n8n-error",
+    "host": "books.toscrape.com",
+    "path": "/status/403",
+    "requests": 1
+  }
+]

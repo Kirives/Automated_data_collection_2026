@@ -1,0 +1,27 @@
+[
+  {
+    "mechanism": "Условный GET",
+    "requests_before": 1,
+    "requests_after": 1,
+    "bytes_before": 991,
+    "bytes_after": 0,
+    "traffic_saved_percent": 100.0
+  },
+  {
+    "mechanism": "gzip",
+    "requests_before": 1,
+    "requests_after": 1,
+    "bytes_before": 991,
+    "bytes_after": 319,
+    "traffic_saved_percent": 67.81
+  },
+  {
+    "mechanism": "Watermark: неизменившиеся страницы пропускаются",
+    "requests_before": 12,
+    "requests_after": 6,
+    "bytes_before": 12810,
+    "bytes_after": 6448,
+    "measurement": "Размеры реальных ответов стенда; отбор по lastmod из manifest",
+    "traffic_saved_percent": 49.66
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "url": "https://books.toscrape.com/fault/captcha",
+  "verdict": "block",
+  "reason": "Маркер: captcha"
+}

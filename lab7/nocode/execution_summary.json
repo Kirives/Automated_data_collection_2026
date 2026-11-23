@@ -1,0 +1,60 @@
+{
+  "status": "success",
+  "started_at": "2026-10-25T21:46:32.012Z",
+  "stopped_at": "2026-10-25T21:46:46.900Z",
+  "nodes": [
+    {
+      "name": "Ручной запуск",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Список страниц",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "По одной странице",
+      "runs": 13,
+      "status": "success"
+    },
+    {
+      "name": "HTTP с повторами",
+      "runs": 12,
+      "status": "success"
+    },
+    {
+      "name": "Проверить результат",
+      "runs": 12,
+      "status": "success"
+    },
+    {
+      "name": "Пауза 1 секунда",
+      "runs": 12,
+      "status": "success"
+    },
+    {
+      "name": "Объединить записи",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Удалить дубликаты",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Результат в CSV",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Сохранить Результат",
+      "runs": 1,
+      "status": "success"
+    }
+  ],
+  "seconds": 14.888,
+  "records": 60,
+  "http_node_runs": 12
+}

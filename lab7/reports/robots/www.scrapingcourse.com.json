@@ -1,0 +1,10 @@
+{
+  "host": "www.scrapingcourse.com",
+  "status": 200,
+  "state": "present",
+  "crawl_delay": 0,
+  "request_rate": null,
+  "sitemaps": [],
+  "configured_rps": 1.0,
+  "effective_rps": 1.0
+}

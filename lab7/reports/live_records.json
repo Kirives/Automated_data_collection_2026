@@ -1,0 +1,247 @@
+[
+  {
+    "key": "books.toscrape.com:a-light-in-the-attic_1000",
+    "title": "A Light in the Attic",
+    "value": "51.77",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+  },
+  {
+    "key": "books.toscrape.com:tipping-the-velvet_999",
+    "title": "Tipping the Velvet",
+    "value": "53.74",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+  },
+  {
+    "key": "books.toscrape.com:soumission_998",
+    "title": "Soumission",
+    "value": "50.10",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/soumission_998/index.html"
+  },
+  {
+    "key": "books.toscrape.com:sharp-objects_997",
+    "title": "Sharp Objects",
+    "value": "47.82",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/sharp-objects_997/index.html"
+  },
+  {
+    "key": "books.toscrape.com:sapiens-a-brief-history-of-humankind_996",
+    "title": "Sapiens: A Brief History of Humankind",
+    "value": "54.23",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html"
+  },
+  {
+    "key": "books.toscrape.com:the-requiem-red_995",
+    "title": "The Requiem Red",
+    "value": "22.65",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-requiem-red_995/index.html"
+  },
+  {
+    "key": "books.toscrape.com:the-dirty-little-secrets-of-getting-your-dream-job_994",
+    "title": "The Dirty Little Secrets of Getting Your Dream Job",
+    "value": "33.34",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html"
+  },
+  {
+    "key": "books.toscrape.com:the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993",
+    "title": "The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",
+    "value": "17.93",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html"
+  },
+  {
+    "key": "books.toscrape.com:the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992",
+    "title": "The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics",
+    "value": "22.60",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html"
+  },
+  {
+    "key": "books.toscrape.com:the-black-maria_991",
+    "title": "The Black Maria",
+    "value": "52.15",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html"
+  },
+  {
+    "key": "books.toscrape.com:starving-hearts-triangular-trade-trilogy-1_990",
+    "title": "Starving Hearts (Triangular Trade Trilogy, #1)",
+    "value": "13.99",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html"
+  },
+  {
+    "key": "books.toscrape.com:shakespeares-sonnets_989",
+    "title": "Shakespeare's Sonnets",
+    "value": "20.66",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html"
+  },
+  {
+    "key": "books.toscrape.com:set-me-free_988",
+    "title": "Set Me Free",
+    "value": "17.46",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/set-me-free_988/index.html"
+  },
+  {
+    "key": "books.toscrape.com:scott-pilgrims-precious-little-life-scott-pilgrim-1_987",
+    "title": "Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)",
+    "value": "52.29",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html"
+  },
+  {
+    "key": "books.toscrape.com:rip-it-up-and-start-again_986",
+    "title": "Rip it Up and Start Again",
+    "value": "35.02",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html"
+  },
+  {
+    "key": "books.toscrape.com:our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985",
+    "title": "Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",
+    "value": "57.25",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html"
+  },
+  {
+    "key": "books.toscrape.com:olio_984",
+    "title": "Olio",
+    "value": "23.88",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/olio_984/index.html"
+  },
+  {
+    "key": "books.toscrape.com:mesaerion-the-best-science-fiction-stories-1800-1849_983",
+    "title": "Mesaerion: The Best Science Fiction Stories 1800-1849",
+    "value": "37.59",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html"
+  },
+  {
+    "key": "books.toscrape.com:libertarianism-for-beginners_982",
+    "title": "Libertarianism for Beginners",
+    "value": "51.33",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html"
+  },
+  {
+    "key": "books.toscrape.com:its-only-the-himalayas_981",
+    "title": "It's Only the Himalayas",
+    "value": "45.17",
+    "unit": "GBP",
+    "source_url": "https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html"
+  },
+  {
+    "key": "www.scrapingcourse.com:chaz-kangeroo-hoodie",
+    "title": "Chaz Kangeroo Hoodie",
+    "value": "52",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/chaz-kangeroo-hoodie"
+  },
+  {
+    "key": "www.scrapingcourse.com:teton-pullover-hoodie",
+    "title": "Teton Pullover Hoodie",
+    "value": "70",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/teton-pullover-hoodie"
+  },
+  {
+    "key": "www.scrapingcourse.com:bruno-compete-hoodie",
+    "title": "Bruno Compete Hoodie",
+    "value": "63",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/bruno-compete-hoodie"
+  },
+  {
+    "key": "www.scrapingcourse.com:frankie--sweatshirt",
+    "title": "Frankie  Sweatshirt",
+    "value": "60",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/frankie--sweatshirt"
+  },
+  {
+    "key": "www.scrapingcourse.com:hollister-backyard-sweatshirt",
+    "title": "Hollister Backyard Sweatshirt",
+    "value": "52",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/hollister-backyard-sweatshirt"
+  },
+  {
+    "key": "www.scrapingcourse.com:stark-fundamental-hoodie",
+    "title": "Stark Fundamental Hoodie",
+    "value": "42",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/stark-fundamental-hoodie"
+  },
+  {
+    "key": "www.scrapingcourse.com:hero-hoodie",
+    "title": "Hero Hoodie",
+    "value": "54",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/hero-hoodie"
+  },
+  {
+    "key": "www.scrapingcourse.com:oslo-trek-hoodie",
+    "title": "Oslo Trek Hoodie",
+    "value": "42",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/oslo-trek-hoodie"
+  },
+  {
+    "key": "www.scrapingcourse.com:abominable-hoodie",
+    "title": "Abominable Hoodie",
+    "value": "69",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/abominable-hoodie"
+  },
+  {
+    "key": "www.scrapingcourse.com:mach-street-sweatshirt",
+    "title": "Mach Street Sweatshirt",
+    "value": "62",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/mach-street-sweatshirt"
+  },
+  {
+    "key": "www.scrapingcourse.com:grayson-crewneck-sweatshirt",
+    "title": "Grayson Crewneck Sweatshirt",
+    "value": "64",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/grayson-crewneck-sweatshirt"
+  },
+  {
+    "key": "www.scrapingcourse.com:ajax-full-zip-sweatshirt",
+    "title": "Ajax Full-Zip Sweatshirt",
+    "value": "69",
+    "unit": "USD",
+    "source_url": "https://scrapingcourse.com/ecommerce/product/ajax-full-zip-sweatshirt"
+  },
+  {
+    "key": "worldbank:RUS:2022",
+    "title": "Russian Federation",
+    "value": "144236933",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/RUS/indicator/SP.POP.TOTL?format=json&date=2020:2022"
+  },
+  {
+    "key": "worldbank:RUS:2021",
+    "title": "Russian Federation",
+    "value": "144746762",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/RUS/indicator/SP.POP.TOTL?format=json&date=2020:2022"
+  },
+  {
+    "key": "worldbank:RUS:2020",
+    "title": "Russian Federation",
+    "value": "145245148",
+    "unit": "persons",
+    "source_url": "https://api.worldbank.org/v2/country/RUS/indicator/SP.POP.TOTL?format=json&date=2020:2022"
+  }
+]

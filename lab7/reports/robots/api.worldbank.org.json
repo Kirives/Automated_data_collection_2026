@@ -1,0 +1,10 @@
+{
+  "host": "api.worldbank.org",
+  "status": 404,
+  "state": "missing_404",
+  "crawl_delay": 0,
+  "request_rate": null,
+  "sitemaps": [],
+  "configured_rps": 1.5,
+  "effective_rps": 1.5
+}

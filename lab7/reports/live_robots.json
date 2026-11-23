@@ -1,0 +1,38 @@
+[
+  {
+    "host": "books.toscrape.com",
+    "status": 404,
+    "state": "missing_404",
+    "crawl_delay": 0,
+    "request_rate": null,
+    "sitemaps": [],
+    "configured_rps": 2.0,
+    "effective_rps": 2.0,
+    "probe_url": "https://books.toscrape.com/catalogue/page-1.html",
+    "can_fetch": true
+  },
+  {
+    "host": "www.scrapingcourse.com",
+    "status": 200,
+    "state": "present",
+    "crawl_delay": 0,
+    "request_rate": null,
+    "sitemaps": [],
+    "configured_rps": 1.0,
+    "effective_rps": 1.0,
+    "probe_url": "https://www.scrapingcourse.com/button-click",
+    "can_fetch": true
+  },
+  {
+    "host": "api.worldbank.org",
+    "status": 404,
+    "state": "missing_404",
+    "crawl_delay": 0,
+    "request_rate": null,
+    "sitemaps": [],
+    "configured_rps": 1.5,
+    "effective_rps": 1.5,
+    "probe_url": "https://api.worldbank.org/v2/country/RUS/indicator/SP.POP.TOTL?format=json&date=2020:2022",
+    "can_fetch": true
+  }
+]

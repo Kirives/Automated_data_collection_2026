@@ -1,0 +1,19 @@
+{
+  "Date": "Mon, 26 Oct 2026 04:44:54 GMT",
+  "Content-Type": "application/json;charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "CF-Ray": "a506cef69b9e9d9d-DME",
+  "CF-Cache-Status": "HIT",
+  "Access-Control-Allow-Origin": "*",
+  "Age": "25016",
+  "Cache-Control": "public, max-age=86400",
+  "X-Powered-By": "ASP.NET",
+  "Expires": "Tue, 27 Oct 2026 04:44:54 GMT",
+  "Last-Modified": "Sun, 25 Oct 2026 21:47:57 GMT",
+  "Server": "cloudflare",
+  "Vary": "accept-encoding",
+  "Access-Control-Allow-Headers": "X-Requested-With",
+  "Access-Control-Allow-Methods": "GET",
+  "Request-Context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422"
+}

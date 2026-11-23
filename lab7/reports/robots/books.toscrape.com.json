@@ -1,0 +1,10 @@
+{
+  "host": "books.toscrape.com",
+  "status": 404,
+  "state": "missing_404",
+  "crawl_delay": 0,
+  "request_rate": null,
+  "sitemaps": [],
+  "configured_rps": 2.0,
+  "effective_rps": 2.0
+}

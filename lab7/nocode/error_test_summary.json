@@ -1,0 +1,55 @@
+{
+  "status": "error",
+  "started_at": "2026-10-25T21:48:37.531Z",
+  "stopped_at": "2026-10-25T21:48:38.198Z",
+  "nodes": [
+    {
+      "name": "Ручной запуск",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Список страниц",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "По одной странице",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "HTTP с повторами",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Проверить результат",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Описание ошибки",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Ошибку в CSV",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Сохранить Ошибку",
+      "runs": 1,
+      "status": "success"
+    },
+    {
+      "name": "Уведомить о сбое",
+      "runs": 1,
+      "status": "error"
+    }
+  ],
+  "seconds": 0.667,
+  "http_node_runs": 1,
+  "error": "Сбор остановлен. Уведомление в журнале выполнения, подробности в error_log.csv."
+}

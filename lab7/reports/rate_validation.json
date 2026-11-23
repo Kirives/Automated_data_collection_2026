@@ -1,0 +1,26 @@
+[
+  {
+    "host": "books.toscrape.com",
+    "limit_rps": 2.0,
+    "requests": 7,
+    "min_interval_seconds": 0.5005,
+    "required_min_seconds": 0.5,
+    "passed": true
+  },
+  {
+    "host": "www.scrapingcourse.com",
+    "limit_rps": 1.0,
+    "requests": 6,
+    "min_interval_seconds": 1.0005,
+    "required_min_seconds": 1.0,
+    "passed": true
+  },
+  {
+    "host": "api.worldbank.org",
+    "limit_rps": 1.5,
+    "requests": 6,
+    "min_interval_seconds": 0.6673,
+    "required_min_seconds": 0.6667,
+    "passed": true
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "run_id": "block_403",
+  "requests": 2,
+  "codes": {
+    "200": 1,
+    "403": 1
+  },
+  "error_fraction": 0.5,
+  "rate_429_403": 0.5,
+  "retries": 0,
+  "median_ms": 2.2605000000000004,
+  "p95_ms": 2.44545,
+  "traffic_bytes": 115,
+  "responses_304": 0,
+  "breaker_activations": 0,
+  "records": 0,
+  "rejected": 0,
+  "duration_seconds": 0.7545712999999523,
+  "mean_body_bytes": 0,
+  "blocked_domains": [
+    "books.toscrape.com"
+  ],
+  "skipped_incremental": 0,
+  "expected_missing_robots": 0,
+  "alerts": [
+    {
+      "metric": "error_fraction",
+      "value": 0.5,
+      "threshold": 0.1,
+      "reason": "Ошибок более 10%"
+    },
+    {
+      "metric": "rate_429_403",
+      "value": 0.5,
+      "threshold": 0.05,
+      "reason": "429/403 более 5%"
+    },
+    {
+      "metric": "empty_result",
+      "value": 1,
+      "threshold": 0,
+      "reason": "Пустой результат"
+    },
+    {
+      "metric": "blocked_domains",
+      "reason": "Домен остановлен детектором",
+      "value": [
+        "books.toscrape.com"
+      ]
+    }
+  ],
+  "status": "red"
+}

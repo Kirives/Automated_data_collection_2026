@@ -1,0 +1,5 @@
+{
+  "url": "https://books.toscrape.com/status/403",
+  "verdict": "block",
+  "reason": "HTTP 403"
+}

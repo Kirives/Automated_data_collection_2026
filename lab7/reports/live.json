@@ -1,0 +1,29 @@
+{
+  "run_id": "live",
+  "requests": 7,
+  "codes": {
+    "404": 2,
+    "200": 4,
+    "304": 1
+  },
+  "error_fraction": 0.0,
+  "rate_429_403": 0.0,
+  "retries": 0,
+  "median_ms": 579.052,
+  "p95_ms": 984.6841,
+  "traffic_bytes": 66998,
+  "responses_304": 1,
+  "breaker_activations": 0,
+  "records": 35,
+  "rejected": 0,
+  "duration_seconds": 5.134041500001331,
+  "mean_body_bytes": 22251.666666666668,
+  "blocked_domains": [],
+  "skipped_incremental": 0,
+  "expected_missing_robots": 2,
+  "alerts": [],
+  "status": "green",
+  "fixture": false,
+  "user_agent": "VshivkovUniversityLab7/1.0 (educational; contact=test@mail.ru)",
+  "contact_configured": true
+}

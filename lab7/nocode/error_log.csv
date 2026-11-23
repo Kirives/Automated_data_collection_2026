@@ -1,0 +1,2 @@
+﻿timestamp,message
+2026-10-25T21:48:38.165Z,"{""body"":{""error"":""controlled status response""},""headers"":{""server"":""BaseHTTP/0.6 Python/3.14.5"",""date"":""Sun, 25 Oct 2026 21:48:38 GMT"",""content-length"":""58"",""content-type"":""application/json; charset=utf-8""},""statusCode"":403,""statusMessage"":""Forbidden""}"

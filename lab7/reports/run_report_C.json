@@ -1,0 +1,30 @@
+{
+  "run_id": "C",
+  "requests": 12,
+  "codes": {
+    "200": 9,
+    "304": 3
+  },
+  "error_fraction": 0.0,
+  "rate_429_403": 0.0,
+  "retries": 0,
+  "median_ms": 7.8575,
+  "p95_ms": 19.09665,
+  "traffic_bytes": 1656,
+  "responses_304": 3,
+  "breaker_activations": 0,
+  "records": 60,
+  "rejected": 0,
+  "duration_seconds": 3.6784989000000223,
+  "mean_body_bytes": 1013.3333333333334,
+  "blocked_domains": [],
+  "skipped_incremental": 6,
+  "expected_missing_robots": 0,
+  "alerts": [],
+  "status": "green",
+  "logical_pages": 12,
+  "logical_records": 60,
+  "workers": 3,
+  "robots_included": true,
+  "fixture": true
+}

@@ -1,0 +1,40 @@
+{
+  "run_id": "block_captcha",
+  "requests": 2,
+  "codes": {
+    "200": 2
+  },
+  "error_fraction": 0.0,
+  "rate_429_403": 0.0,
+  "retries": 0,
+  "median_ms": 9.2115,
+  "p95_ms": 15.19245,
+  "traffic_bytes": 153,
+  "responses_304": 0,
+  "breaker_activations": 0,
+  "records": 0,
+  "rejected": 0,
+  "duration_seconds": 0.7701270000000022,
+  "mean_body_bytes": 76,
+  "blocked_domains": [
+    "books.toscrape.com"
+  ],
+  "skipped_incremental": 0,
+  "expected_missing_robots": 0,
+  "alerts": [
+    {
+      "metric": "empty_result",
+      "value": 1,
+      "threshold": 0,
+      "reason": "Пустой результат"
+    },
+    {
+      "metric": "blocked_domains",
+      "reason": "Домен остановлен детектором",
+      "value": [
+        "books.toscrape.com"
+      ]
+    }
+  ],
+  "status": "red"
+}

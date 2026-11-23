@@ -1,0 +1,27 @@
+[
+  {
+    "host": "books.toscrape.com",
+    "status": 200,
+    "verdict": "ok",
+    "reason": "",
+    "bytes": 50469
+  },
+  {
+    "host": "books.toscrape.com",
+    "conditional_status": 304
+  },
+  {
+    "host": "www.scrapingcourse.com",
+    "status": 200,
+    "verdict": "ok",
+    "reason": "",
+    "bytes": 15572
+  },
+  {
+    "host": "api.worldbank.org",
+    "status": 200,
+    "verdict": "ok",
+    "reason": "",
+    "bytes": 714
+  }
+]
